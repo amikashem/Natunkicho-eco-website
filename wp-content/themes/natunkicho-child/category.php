@@ -1,7 +1,7 @@
-<?php
+<?php 
 /**
- * Tag Archive Template - Dynamic Grid (2 Columns, 3 Rows)
- * Location: /hello-child/tag.php
+ * Category Archive Template - Dynamic Grid (2 Columns, 3 Rows)
+ * Location: /hello-child/category.php
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -12,8 +12,8 @@ get_header();
 ?>
 
 <style>
-/* === Tag Grid Styling (same as category) === */
-.nk-tag-grid {
+/* === Category Grid Styling === */
+.nk-category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
@@ -22,7 +22,7 @@ get_header();
   padding: 0 15px;
 }
 
-.nk-tag-card {
+.nk-category-card {
   background: #fff;
   border-radius: 10px;
   overflow: hidden;
@@ -30,29 +30,29 @@ get_header();
   transition: transform 0.3s ease;
 }
 
-.nk-tag-card:hover {
+.nk-category-card:hover {
   transform: translateY(-5px);
 }
 
-.nk-tag-card img {
+.nk-category-card img {
   width: 100%;
   height: 220px;
   object-fit: cover;
 }
 
-.nk-tag-card h3 {
+.nk-category-card h3 {
   font-size: 1.2rem;
   padding: 15px;
   margin: 0;
   color: #222;
 }
 
-.nk-tag-card a {
+.nk-category-card a {
   color: inherit;
   text-decoration: none;
 }
 
-.nk-tag-card p {
+.nk-category-card p {
   font-size: 0.95rem;
   padding: 0 15px 15px;
   color: #555;
@@ -74,41 +74,48 @@ get_header();
 .nk-view-more:hover {
   background: #d83e22;
 }
+
+.nk-no-posts {
+  text-align: center;
+  margin: 50px 0;
+  color: #777;
+}
 </style>
 
 <main id="primary" class="site-main">
   <header class="page-header">
     <h1 class="page-title" style="text-align:center;margin-top:40px;">
-      Tag: <?php single_tag_title(); ?>
+      <?php single_cat_title(); ?>
     </h1>
-    <?php if ( tag_description() ) : ?>
+    <?php if ( category_description() ) : ?>
       <div class="archive-description" style="text-align:center;margin-bottom:30px;">
-        <?php echo tag_description(); ?>
+        <?php echo category_description(); ?>
       </div>
     <?php endif; ?>
   </header>
 
-  <div class="nk-tag-grid" id="nk-tag-grid">
+  <div class="nk-category-grid" id="nk-category-grid">
     <?php
-    $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+    // Get the current page number safely
+    $paged = max( 1, get_query_var( 'paged', 1 ) );
 
     $args = array(
       'post_type' => 'post',
-      'posts_per_page' => 6,
+      'posts_per_page' => 6, // 2 columns x 3 rows
       'paged' => $paged,
-      'tag_id' => get_queried_object_id(),
+      'cat' => get_queried_object_id(),
     );
 
     $query = new WP_Query( $args );
 
     if ( $query->have_posts() ) :
       while ( $query->have_posts() ) : $query->the_post(); ?>
-        <article class="nk-tag-card">
+        <article class="nk-category-card">
           <a href="<?php the_permalink(); ?>">
             <?php if ( has_post_thumbnail() ) {
               the_post_thumbnail( 'medium_large' );
             } else {
-              echo '<img src="' . get_stylesheet_directory_uri() . '/placeholder.jpg" alt="No Image">';
+              echo '<img src="' . esc_url( get_stylesheet_directory_uri() . '/placeholder.jpg' ) . '" alt="No Image">';
             } ?>
             <h3><?php the_title(); ?></h3>
           </a>
@@ -116,14 +123,14 @@ get_header();
         </article>
       <?php endwhile;
     else :
-      echo '<p style="text-align:center;">No posts found for this tag.</p>';
+      echo '<p class="nk-no-posts">No posts found in this category.</p>';
     endif;
     wp_reset_postdata();
     ?>
   </div>
 
   <?php
-  // Pagination: “View More” button
+  // === Pagination: show “View More” if more pages exist ===
   if ( $query->max_num_pages > 1 && $paged < $query->max_num_pages ) :
     $next_page = $paged + 1;
     $next_link = get_pagenum_link( $next_page );
