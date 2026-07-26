@@ -1,0 +1,49 @@
+****  CREATE TABLE wpjv_nkrp_subscription ***
+CREATE TABLE wpjv_nkrp_subscriptions (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    user_id BIGINT UNSIGNED NOT NULL,
+    user_type VARCHAR(20) NOT NULL DEFAULT 'employer', 
+    plan_key VARCHAR(50) NOT NULL DEFAULT 'free',
+    jobs_posted INT UNSIGNED DEFAULT 0,
+    applications_viewed INT UNSIGNED DEFAULT 0,
+    status VARCHAR(20) DEFAULT 'active',
+    started_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    expires_at DATETIME DEFAULT NULL,
+    PRIMARY KEY (id),
+    KEY user_id (user_id),
+    KEY status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+
+
+**** MySQL to create the resumes table immediately.******
+
+
+CREATE TABLE wpjv_nkrp_resumes (id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT, candidate_id BIGINT UNSIGNED NOT NULL, user_id BIGINT UNSIGNED NOT NULL, resume_title VARCHAR(255) NOT NULL, objective TEXT, education_data LONGTEXT, experience_data LONGTEXT, skills_data LONGTEXT, certifications_data LONGTEXT, languages_data LONGTEXT, portfolio_data LONGTEXT, ai_parsed_data LONGTEXT, file_path VARCHAR(500) DEFAULT NULL, file_type VARCHAR(50) DEFAULT 'manual', is_primary TINYINT(1) DEFAULT 0, status VARCHAR(20) DEFAULT 'active', created_at DATETIME DEFAULT CURRENT_TIMESTAMP, updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+
+****** creating candidates table****.
+
+CREATE TABLE wpjv_nkrp_candidates (id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT, user_id BIGINT UNSIGNED NOT NULL, first_name VARCHAR(100) NOT NULL, last_name VARCHAR(100) NOT NULL, email VARCHAR(150) NOT NULL, phone VARCHAR(50) DEFAULT NULL, professional_title VARCHAR(255) DEFAULT NULL, location_city VARCHAR(100) DEFAULT NULL, location_country VARCHAR(100) DEFAULT NULL, date_of_birth DATE DEFAULT NULL, gender VARCHAR(50) DEFAULT NULL, nationality VARCHAR(100) DEFAULT NULL, current_salary DECIMAL(12,2) DEFAULT NULL, expected_salary DECIMAL(12,2) DEFAULT NULL, salary_currency VARCHAR(10) DEFAULT 'USD', experience_years INT DEFAULT 0, education_level VARCHAR(100) DEFAULT NULL, availability VARCHAR(100) DEFAULT NULL, bio LONGTEXT, skills TEXT, languages TEXT, linkedin_url VARCHAR(255) DEFAULT NULL, portfolio_url VARCHAR(255) DEFAULT NULL, profile_photo_id BIGINT UNSIGNED DEFAULT NULL, resume_file_id BIGINT UNSIGNED DEFAULT NULL, is_featured TINYINT(1) DEFAULT 0, status VARCHAR(20) DEFAULT 'active', profile_views BIGINT DEFAULT 0, created_at DATETIME DEFAULT CURRENT_TIMESTAMP, updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP, PRIMARY KEY (id)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+**** Create the Applications Table (Direct SQL)  ****
+
+CREATE TABLE wpjv_nkrp_applications (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    job_id BIGINT UNSIGNED NOT NULL,
+    candidate_id BIGINT UNSIGNED NOT NULL,
+    company_id BIGINT UNSIGNED NOT NULL,
+    resume_id BIGINT UNSIGNED DEFAULT NULL,
+    cover_letter TEXT,
+    status VARCHAR(50) DEFAULT 'new',
+    employer_rating TINYINT(1) DEFAULT 0,
+    employer_notes TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    KEY job_id (job_id),
+    KEY candidate_id (candidate_id),
+    KEY company_id (company_id),
+    KEY status (status)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
