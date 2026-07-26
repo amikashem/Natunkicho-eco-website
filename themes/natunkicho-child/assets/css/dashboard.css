@@ -1,0 +1,155 @@
+.nk-dashboard-wrapper{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:30px;
+    margin-top:40px;
+}
+
+.nk-dashboard-sidebar{
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.nk-dashboard-sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:30px 0 0;
+}
+
+.nk-dashboard-sidebar li{
+    margin-bottom:15px;
+}
+
+.nk-dashboard-sidebar a{
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+}
+
+.nk-dashboard-content{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.nk-dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin-top:30px;
+}
+
+.nk-dash-card{
+    background:#f7f9fc;
+    border-radius:16px;
+    padding:25px;
+}
+
+@media(max-width:768px){
+
+    .nk-dashboard-wrapper{
+        grid-template-columns:1fr;
+    }
+
+    .nk-dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+} 
+/* =========================================
+   WP Job Manager - Professional Form Styling
+   ========================================= */
+
+/* Form Container Spacing */
+.nk-professional-form fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 24px;
+}
+
+/* Labels */
+.nk-professional-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e293b; /* Dark slate text */
+    margin-bottom: 8px;
+}
+
+/* Optional text next to labels */
+.nk-professional-form label small {
+    color: #64748b;
+    font-weight: 400;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+/* Input Fields, Textareas, and Selects */
+.nk-professional-form input[type="text"],
+.nk-professional-form input[type="email"],
+.nk-professional-form input[type="url"],
+.nk-professional-form input[type="password"],
+.nk-professional-form input[type="number"],
+.nk-professional-form select,
+.nk-professional-form textarea {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 15px;
+    color: #334155;
+    background-color: #f8fafc; /* Very light, clean background */
+    border: 1px solid #cbd5e1;
+    border-radius: 8px; /* Modern rounded corners */
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth animation */
+    font-family: inherit;
+}
+
+/* Textarea specific */
+.nk-professional-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* 🌟 Focus States (The "Premium" Feel) */
+.nk-professional-form input:focus,
+.nk-professional-form select:focus,
+.nk-professional-form textarea:focus {
+    outline: none;
+    border-color: #0056b3; /* Change this to your Natunkicho brand primary color */
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1); /* Soft glow effect */
+}
+
+/* File Upload Input */
+.nk-professional-form input[type="file"] {
+    padding: 10px;
+    background: #f1f5f9;
+    border: 1px dashed #94a3b8;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* Description Text (Hints under fields) */
+.nk-professional-form .description {
+    display: block;
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 6px;
+}
+
+/* Rich Text Editor (TinyMCE) adjustments if active */
+.nk-professional-form .wp-editor-container {
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Align the Submit Button */
+.nk-form-submit-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}

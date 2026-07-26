@@ -1,0 +1,65 @@
+/* === NK Category Bar Styling (Cross Browser Fixed) === */
+.nk-category-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eaeaea;
+  background: #fff;
+  font-family: inherit;
+}
+
+.nk-category-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background: #f7f7f7;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.nk-category-item:hover {
+  background: #0073aa;
+  color: #fff;
+}
+
+.nk-show-more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  background: transparent;
+  border: 1px solid #0073aa;
+  border-radius: 20px;
+  color: #0073aa;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.nk-show-more:hover {
+  background: #0073aa;
+  color: #fff;
+}
+
+/* Responsive: horizontal scroll on small screens */
+@media (max-width: 768px) {
+  .nk-category-bar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+    scroll-behavior: smooth;
+  }
+
+  .nk-category-item,
+  .nk-show-more {
+    flex: 0 0 auto;
+  }
+}

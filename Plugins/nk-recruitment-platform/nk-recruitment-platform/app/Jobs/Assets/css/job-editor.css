@@ -1,0 +1,19 @@
+#poststuff h2{
+    font-size:16px;
+    font-weight:600;
+}
+
+#post-body-content{
+    margin-bottom:20px;
+}
+
+.form-table th{
+    width:220px;
+}
+
+.form-table input,
+.form-table select,
+.form-table textarea{
+    width:100%;
+    max-width:550px;
+}

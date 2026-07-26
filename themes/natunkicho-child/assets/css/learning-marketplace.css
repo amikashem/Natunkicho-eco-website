@@ -1,0 +1,624 @@
+/* ==========================================================================
+   Natunkicho Learning Ecosystem - Core Styles
+   ========================================================================== */
+
+/* --- 1. Variables & Scoping --- */
+#nk-learning-ecosystem {
+    --nk-primary: #0056b3;        /* Premium Trust Blue */
+    --nk-secondary: #f0f4f8;      /* Soft background */
+    --nk-accent: #ff9900;         /* Action/Warning Orange */
+    --nk-text-dark: #1a1a1a;
+    --nk-text-light: #555555;
+    --nk-border: #e0e0e0;
+    --nk-white: #ffffff;
+    --nk-radius: 8px;
+    --nk-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    --nk-shadow-hover: 0 10px 20px rgba(0,0,0,0.1);
+    
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--nk-text-dark);
+    line-height: 1.6;
+    background-color: var(--nk-white);
+}
+
+/* Base Utility Classes */
+#nk-learning-ecosystem .nk-learning-section {
+    padding: 80px 0;
+}
+#nk-learning-ecosystem .bg-light-gray {
+    background-color: var(--nk-secondary);
+}
+#nk-learning-ecosystem .nk-learning-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- 2. Typography & Buttons --- */
+#nk-learning-ecosystem h1, h2, h3, h4 {
+    margin-top: 0;
+    font-weight: 700;
+}
+#nk-learning-ecosystem .nk-section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#nk-learning-ecosystem .nk-section-header {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+#nk-learning-ecosystem .nk-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: var(--nk-radius);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+#nk-learning-ecosystem .nk-btn-primary { background: var(--nk-primary); color: var(--nk-white); }
+#nk-learning-ecosystem .nk-btn-primary:hover { background: #004494; }
+#nk-learning-ecosystem .nk-btn-secondary { background: var(--nk-white); color: var(--nk-primary); border: 2px solid var(--nk-primary); }
+#nk-learning-ecosystem .nk-btn-primary-sm { padding: 8px 16px; font-size: 14px; background: var(--nk-primary); color: var(--nk-white); }
+
+/* --- REPLACE SECTION 3: The New Premium Pill Navigation --- */
+#nk-learning-ecosystem .nk-margin-top-gap {
+    margin-top: 30px; /* Adjust this to create the perfect gap below your main header */
+}
+#nk-learning-ecosystem .nk-learning-nav-wrapper {
+    background: var(--nk-white);
+    border-bottom: 1px solid var(--nk-border);
+    padding: 15px 0;
+}
+#nk-learning-ecosystem .nk-learning-nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nk-learning-ecosystem .nk-premium-menu-scroll {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+}
+#nk-learning-ecosystem .nk-premium-menu-scroll::-webkit-scrollbar { display: none; } /* Chrome */
+#nk-learning-ecosystem .nk-learning-menu-pills {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+#nk-learning-ecosystem .nk-learning-menu-pills a {
+    text-decoration: none;
+    color: var(--nk-text-light);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: var(--nk-secondary);
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+#nk-learning-ecosystem .nk-learning-menu-pills a:hover {
+    background: #e2e8f0;
+    color: var(--nk-text-dark);
+}
+#nk-learning-ecosystem .nk-learning-menu-pills a.active {
+    background: var(--nk-text-dark);
+    color: var(--nk-white);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+#nk-learning-ecosystem .nk-btn-dark-sm {
+    background: var(--nk-text-dark);
+    color: var(--nk-white);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+}
+#nk-learning-ecosystem .nk-btn-text {
+    background: transparent;
+    color: var(--nk-text-dark);
+    font-weight: 600;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+
+/* --- ADD TO BOTTOM: Premium Testimonials --- */
+#nk-learning-ecosystem .nk-testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+#nk-learning-ecosystem .nk-testimonial-card {
+    background: var(--nk-white);
+    padding: 30px;
+    border-radius: var(--nk-radius);
+    box-shadow: var(--nk-shadow);
+    border: 1px solid var(--nk-border);
+}
+#nk-learning-ecosystem .nk-testi-stars {
+    color: #ffc107; /* Gold stars */
+    margin-bottom: 15px;
+}
+#nk-learning-ecosystem .nk-testi-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--nk-text-dark);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+#nk-learning-ecosystem .nk-testi-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-top: 1px solid var(--nk-border);
+    padding-top: 20px;
+}
+#nk-learning-ecosystem .nk-testi-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+#nk-learning-ecosystem .nk-testi-info h4 { margin: 0 0 2px 0; font-size: 1rem; }
+#nk-learning-ecosystem .nk-testi-info span { font-size: 0.85rem; color: var(--nk-text-light); }
+/* --- 4. Hero Section --- */
+#nk-learning-ecosystem .nk-hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, var(--nk-secondary) 0%, #ffffff 100%);
+}
+#nk-learning-ecosystem .nk-hero-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+#nk-learning-ecosystem .nk-hero-title .highlight { color: var(--nk-primary); }
+#nk-learning-ecosystem .nk-hero-search-wrapper { margin-top: 40px; max-width: 700px; }
+#nk-learning-ecosystem .nk-learning-search-form { display: flex; gap: 10px; }
+#nk-learning-ecosystem .nk-search-input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background: var(--nk-white);
+    border: 1px solid var(--nk-border);
+    border-radius: var(--nk-radius);
+    padding: 5px 15px;
+}
+#nk-learning-ecosystem .nk-search-input-group input {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* --- 5. Grid Layouts (Courses, Tutors, Roadmaps) --- */
+/* Auto-responsive Grid System */
+#nk-learning-ecosystem .nk-course-grid,
+#nk-learning-ecosystem .nk-tutor-grid,
+#nk-learning-ecosystem .nk-roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Universal Card Styling */
+#nk-learning-ecosystem .nk-course-card,
+#nk-learning-ecosystem .nk-tutor-card,
+#nk-learning-ecosystem .nk-roadmap-card {
+    background: var(--nk-white);
+    border: 1px solid var(--nk-border);
+    border-radius: var(--nk-radius);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+#nk-learning-ecosystem .nk-course-card:hover,
+#nk-learning-ecosystem .nk-tutor-card:hover,
+#nk-learning-ecosystem .nk-roadmap-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--nk-shadow-hover);
+}
+
+/* Course Card Specifics */
+#nk-learning-ecosystem .nk-course-thumbnail {
+    height: 180px;
+    background: #ddd; /* Placeholder */
+    position: relative;
+}
+#nk-learning-ecosystem .nk-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--nk-accent);
+    color: var(--nk-white);
+    padding: 4px 8px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+#nk-learning-ecosystem .nk-course-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+#nk-learning-ecosystem .nk-course-title {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+#nk-learning-ecosystem .nk-course-title a { color: var(--nk-text-dark); text-decoration: none; }
+#nk-learning-ecosystem .nk-course-meta {
+    display: flex;
+    gap: 15px;
+    font-size: 13px;
+    color: var(--nk-text-light);
+    margin-bottom: 20px;
+}
+#nk-learning-ecosystem .nk-course-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--nk-border);
+    padding-top: 15px;
+}
+#nk-learning-ecosystem .price-current { font-size: 1.2rem; font-weight: bold; }
+
+/* --- 6. Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    #nk-learning-ecosystem .nk-hero-title { font-size: 2.5rem; }
+    #nk-learning-ecosystem .nk-section-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    #nk-learning-ecosystem .nk-learning-search-form { flex-direction: column; }
+    #nk-learning-ecosystem .nk-course-filters { display: flex; flex-wrap: wrap; gap: 10px; }
+}
+/* ==========================================================================
+   TUTOR LMS PREMIUM DASHBOARD OVERRIDES (Natunkicho Style)
+   ========================================================================== */
+
+/* 1. Dashboard Background & Spacing */
+.tutor-dashboard {
+    background-color: #f4f7f6;
+    padding: 40px 20px;
+    border-radius: 12px;
+}
+
+/* 2. The Header Profile Section */
+.tutor-dashboard-header {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    margin-bottom: 30px;
+    border: 1px solid #eeeeee;
+}
+
+/* 3. The Left Navigation Sidebar */
+.tutor-dashboard-left-menu {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    padding: 20px 0;
+    border: 1px solid #eeeeee;
+}
+
+.tutor-dashboard-permalinks li {
+    margin-bottom: 5px;
+}
+
+.tutor-dashboard-permalinks li a {
+    padding: 12px 25px;
+    color: #555555;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    border-left: 4px solid transparent;
+}
+
+.tutor-dashboard-permalinks li a:hover {
+    background: #fafafa;
+    color: #222222;
+}
+
+/* 4. Active Menu Item (Brand Color) */
+.tutor-dashboard-permalinks li.active a {
+    background: #eef5fa;
+    color: #0056b3;
+    border-left: 4px solid #0056b3;
+    font-weight: 600;
+}
+
+/* 5. The Main Content Area */
+.tutor-dashboard-content {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    padding: 40px;
+    border: 1px solid #eeeeee;
+}
+
+/* 6. Dashboard Cards & Stats */
+.tutor-dashboard-info-card {
+    background: #fdfdfd;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+.tutor-dashboard-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+/* 7. Hide Tutor Branding (If any slipped through) */
+.tutor-footer-logo, .tutor-dashboard-builder-pro-badge {
+    display: none !important;
+}
+
+/* ==========================================================================
+   ACADEMY DROPDOWN MENU (BULLETPROOF & RESPONSIVE)
+   ========================================================================== */
+.nk-academy-dropdown {
+    position: relative !important;
+    display: inline-block !important;
+}
+
+.nk-academy-dropdown-menu {
+    display: none;
+    position: absolute !important;
+    right: 0 !important;
+    top: 100% !important;
+    background-color: #ffffff !important;
+    min-width: 270px !important;
+    box-shadow: 0px 15px 35px rgba(0,0,0,0.15) !important;
+    border-radius: 10px !important;
+    z-index: 99999 !important;
+    padding: 10px 0 !important;
+    margin-top: 15px !important; /* The visual gap */
+    border: 1px solid #eeeeee !important;
+    text-align: left !important;
+}
+
+/* ADD THIS INVISIBLE BRIDGE RIGHT HERE */
+.nk-academy-dropdown-menu::before {
+    content: "" !important;
+    position: absolute !important;
+    top: -20px !important; /* Covers the 15px gap safely */
+    left: 0 !important;
+    width: 100% !important;
+    height: 20px !important;
+    background: transparent !important;
+}
+
+/* Show dropdown on hover */
+.nk-academy-dropdown:hover .nk-academy-dropdown-menu {
+    display: block !important;
+    animation: nkFadeIn 0.2s ease-in-out;
+}
+
+.nk-academy-dropdown-menu ul {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nk-academy-dropdown-menu ul li {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style-type: none !important; /* Kills the black bullets */
+    display: block !important;
+}
+
+.nk-academy-dropdown-menu li a {
+    color: #333333 !important;
+    padding: 12px 20px !important;
+    text-decoration: none !important; /* Kills the default underline */
+    display: flex !important;
+    align-items: center !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    transition: background 0.2s, color 0.2s !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.nk-academy-dropdown-menu li a:hover {
+    background-color: #f4f7f6 !important;
+    color: #0056b3 !important;
+}
+
+.nk-academy-dropdown-menu .nk-divider {
+    border-top: 1px solid #eeeeee !important;
+    margin: 8px 0 !important;
+    height: 1px !important;
+}
+
+.nk-academy-dropdown-menu .nk-login-text {
+    font-size: 13px !important;
+    color: #777777 !important;
+    justify-content: center !important;
+}
+
+.nk-academy-dropdown-menu .nk-login-text:hover {
+    color: #0056b3 !important;
+}
+
+@keyframes nkFadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Responsive Mobile Adjustments --- */
+@media (max-width: 768px) {
+    .nk-learning-nav-container {
+        flex-wrap: wrap !important;
+        gap: 15px !important;
+    }
+    
+    .nk-academy-dropdown-menu {
+        /* Prevents the dropdown from going off the screen on small phones */
+        right: auto !important; 
+        left: 0 !important;
+        min-width: 240px !important;
+    }
+}
+
+/* ==========================================================================
+   PREMIUM ACADEMY AUTHENTICATION CARDS
+   ========================================================================== */
+.nk-auth-page-wrapper {
+    background: #f4f7f6;
+    padding: 80px 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nk-auth-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.nk-auth-card h2 {
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.nk-auth-card p {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Force Tutor LMS forms to look good inside our card */
+.nk-auth-card .tutor-login-form-wrap,
+.nk-auth-card .tutor-registration-wrap {
+    text-align: left;
+}
+
+.nk-auth-card input[type="text"],
+.nk-auth-card input[type="email"],
+.nk-auth-card input[type="password"] {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    background: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+.nk-auth-card button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nk-auth-card button[type="submit"]:hover {
+    background: #004494;
+}
+
+/* Hide Tutor's default ugly titles since we are making our own */
+.nk-auth-card .tutor-login-title,
+.nk-auth-card .tutor-segment-title {
+    display: none !important;
+}
+
+/* ==========================================================================
+   PREMIUM ACADEMY AUTHENTICATION CARDS
+   ========================================================================== */
+.nk-auth-page-wrapper {
+    background: #f4f7f6;
+    padding: 80px 20px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nk-auth-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 550px;
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    border: 1px solid #eeeeee;
+    text-align: center;
+}
+
+.nk-auth-card h2 {
+    font-size: 2rem;
+    color: #222222;
+    margin-bottom: 10px;
+}
+
+.nk-auth-card p {
+    color: #666666;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Force Tutor LMS forms to look good inside our card */
+.nk-auth-card .tutor-login-form-wrap,
+.nk-auth-card .tutor-registration-wrap {
+    text-align: left;
+}
+
+.nk-auth-card input[type="text"],
+.nk-auth-card input[type="email"],
+.nk-auth-card input[type="password"] {
+    width: 100%;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+    background: #fdfdfd;
+    margin-bottom: 15px;
+}
+
+.nk-auth-card button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background: #0056b3;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.nk-auth-card button[type="submit"]:hover {
+    background: #004494;
+}
+
+/* Hide Tutor's default ugly titles since we are making our own */
+.nk-auth-card .tutor-login-title,
+.nk-auth-card .tutor-segment-title {
+    display: none !important;
+}

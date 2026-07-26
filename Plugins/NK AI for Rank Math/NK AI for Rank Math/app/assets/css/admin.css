@@ -1,0 +1,261 @@
+/* NK AI for Rank Math - Admin Styles */
+
+/* AI Button */
+.nk-ai-button {
+    margin-left: 8px !important;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border: none !important;
+    padding: 5px 12px !important;
+    border-radius: 4px !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    height: auto !important;
+    line-height: 1.6 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 4px rgba(102, 126, 234, 0.3) !important;
+}
+
+.nk-ai-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(102, 126, 234, 0.4) !important;
+    background: linear-gradient(135deg, #5a6fd6 0%, #6a4291 100%) !important;
+    color: white !important;
+}
+
+.nk-ai-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+}
+
+.nk-ai-button .dashicons {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    vertical-align: text-top;
+}
+
+/* Loading animation */
+.nk-ai-button.loading {
+    position: relative;
+    padding-right: 30px !important;
+}
+
+.nk-ai-button.loading::after {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: nk-ai-spin 0.8s linear infinite;
+}
+
+@keyframes nk-ai-spin {
+    to { transform: translateY(-50%) rotate(360deg); }
+}
+
+/* AI Sidebar */
+.nk-ai-sidebar {
+    position: fixed;
+    top: 32px;
+    right: -400px;
+    width: 400px;
+    height: calc(100vh - 32px);
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    z-index: 9999;
+    overflow-y: auto;
+}
+
+.nk-ai-sidebar.active {
+    right: 0;
+}
+
+.nk-ai-sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f8f9fa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nk-ai-sidebar-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    color: #23282d;
+}
+
+.nk-ai-sidebar-close {
+    cursor: pointer;
+    font-size: 20px;
+    color: #666;
+    background: none;
+    border: none;
+    padding: 4px 8px;
+}
+
+.nk-ai-sidebar-content {
+    padding: 20px;
+}
+
+/* AI Result Preview */
+.nk-ai-preview {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 16px;
+    margin: 12px 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.nk-ai-preview h4 {
+    margin: 0 0 8px 0;
+    color: #23282d;
+}
+
+.nk-ai-preview-content {
+    white-space: pre-wrap;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.nk-ai-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.nk-ai-actions .button {
+    flex: 1;
+}
+
+/* AI Toolbar */
+.nk-ai-toolbar {
+    display: flex;
+    gap: 4px;
+    padding: 8px;
+    background: #f5f5f5;
+    border-radius: 4px;
+    margin: 4px 0;
+}
+
+.nk-ai-toolbar .button {
+    font-size: 12px;
+    padding: 4px 8px;
+    height: auto;
+    line-height: 1.4;
+}
+
+/* Bulk AI Operations */
+.nk-ai-bulk {
+    margin: 16px 0;
+    padding: 16px;
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.nk-ai-bulk-progress {
+    margin: 12px 0;
+}
+
+.nk-ai-bulk-progress-bar {
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.nk-ai-bulk-progress-fill {
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: width 0.3s ease;
+    width: 0%;
+}
+
+/* Notifications */
+.nk-ai-notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 20px;
+    background: #fff;
+    border-left: 4px solid #667eea;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    max-width: 400px;
+    z-index: 99999;
+    animation: nk-ai-slide-up 0.3s ease;
+}
+
+.nk-ai-notification.success {
+    border-left-color: #46b450;
+}
+
+.nk-ai-notification.error {
+    border-left-color: #dc3232;
+}
+
+@keyframes nk-ai-slide-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 782px) {
+    .nk-ai-sidebar {
+        width: 100%;
+        right: -100%;
+        top: 46px;
+        height: calc(100vh - 46px);
+    }
+    
+    .nk-ai-button {
+        font-size: 11px !important;
+        padding: 4px 8px !important;
+    }
+    
+    .nk-ai-toolbar {
+        flex-wrap: wrap;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .nk-ai-sidebar {
+        background: #1e1e1e;
+        color: #ddd;
+    }
+    
+    .nk-ai-sidebar-header {
+        background: #2c2c2c;
+        border-bottom-color: #3c3c3c;
+    }
+    
+    .nk-ai-preview {
+        background: #2c2c2c;
+        border-color: #3c3c3c;
+    }
+    
+    .nk-ai-notification {
+        background: #2c2c2c;
+        color: #ddd;
+    }
+}

@@ -1,0 +1,16 @@
+/* nk-contact-form.css */
+.nk-contact-form { max-width:720px; margin:0 auto; }
+.nk-contact-form .nk-field { margin-bottom:12px; }
+.nk-contact-form label { display:block; font-weight:600; margin-bottom:6px; }
+.nk-contact-form input[type="text"],
+.nk-contact-form input[type="email"],
+.nk-contact-form select,
+.nk-contact-form textarea { width:100%; padding:8px 10px; border:1px solid #ddd; border-radius:6px; box-sizing:border-box; }
+.nk-contact-form button { background:#0073aa; color:#fff; border:none; padding:10px 18px; border-radius:6px; cursor:pointer; }
+.nk-contact-form button[disabled] { opacity:0.6; cursor:not-allowed; }
+.nk-contact-result { margin-top:12px; font-weight:600; }
+.nk-contact-result.success { color: green; }
+.nk-contact-result.error { color: red; }
+.nk-hp { display:none !important; } /* hide honeypot */
+.nk-note { font-size:12px; color:#666; }
+.required { color:#d00; }

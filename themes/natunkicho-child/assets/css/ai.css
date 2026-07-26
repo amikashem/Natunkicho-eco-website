@@ -1,0 +1,57 @@
+.nk-ai-cv-builder{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    margin-top:40px;
+}
+
+.nk-ai-cv-builder form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.nk-ai-cv-builder input,
+.nk-ai-cv-builder textarea{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+}
+
+.nk-ai-cv-builder button{
+    background:#0A66C2;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:14px 20px;
+    cursor:pointer;
+    font-weight:600;
+}  
+
+.nk-ai-btn{
+    position:relative;
+    min-height:55px;
+}
+
+.nk-ai-loader{
+    display:none;
+}
+
+.nk-ai-btn.loading .nk-ai-btn-text{
+    display:none;
+}
+
+.nk-ai-btn.loading .nk-ai-loader{
+    display:inline-block;
+}
+
+/* OPTIONAL SPINNER FEEL */
+.nk-ai-btn.loading{
+    opacity:0.85;
+}
+
+.nk-ai-result{
+    margin-top:30px;
+}

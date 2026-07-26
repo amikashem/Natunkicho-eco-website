@@ -1,0 +1,223 @@
+/* -----------------------------------------------------
+   NK Dropdown Menu System - HOVER VERSION
+   Proper horizontal layout with hover dropdowns
+   Hidden on Mobile
+   ----------------------------------------------------- */
+
+/* === Base Wrapper === */
+.nk-dropdown-menu-wrapper {
+  position: relative;
+  z-index: 1000;
+  padding: 15px 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+/* === Dropdown Container - IMPROVED FOR 8 ITEMS === */
+.nk-dropdown-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Reduced gap to save space */
+  max-width: 1450px; /* Increased max-width */
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 5;
+}
+
+/* === Dropdown Column === */
+.nk-dropdown-column {
+  position: relative;
+  display: inline-block;
+  flex: 1; /* Allow flexible sizing */
+  min-width: 70px; /* Reduced min-width */
+  max-width: 160px; /* Added max-width */
+}
+
+/* === Dropdown Trigger Button - COMPACT VERSION === */
+.nk-dropdown-trigger {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px 10px; /* Reduced padding */
+  border-radius: 6px;
+  font-weight: 500;
+  color: #222;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  width: 100%; /* Take full width of column */
+  min-width: 140px; /* Match column min-width */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px; /* Reduced gap */
+  text-decoration: none;
+  font-size: 13px; /* Slightly smaller font */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.nk-dropdown-trigger:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.nk-dropdown-arrow {
+  font-size: 9px; /* Smaller arrow */
+  transition: transform 0.3s ease;
+  flex-shrink: 0; /* Prevent arrow from shrinking */
+}
+
+/* Rotate arrow on hover */
+.nk-dropdown-column:hover .nk-dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* === Dropdown Content === */
+.nk-dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 9999;
+  pointer-events: none; /* Prevent interaction when hidden */
+}
+
+/* Show dropdown on column hover */
+.nk-dropdown-column:hover .nk-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  pointer-events: auto; /* Enable interaction when visible */
+}
+
+/* === Dropdown List === */
+.nk-dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nk-dropdown-item {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.nk-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.nk-dropdown-link {
+  display: block;
+  padding: 8px 12px; /* Slightly reduced padding */
+  color: #222;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s;
+  font-size: 12px; /* Smaller font for subitems */
+  cursor: pointer; /* Ensure cursor shows as pointer */
+}
+
+.nk-dropdown-link:hover {
+  background-color: #f9f9f9;
+  color: #000;
+}
+
+.nk-more-item {
+  background: #f5f5f5;
+}
+
+.nk-more-link {
+  font-weight: bold;
+  color: #0073aa;
+  font-size: 12px;
+}
+
+/* === MEDIUM SCREEN OPTIMIZATION (Tablets & Small PCs) === */
+@media (min-width: 993px) and (max-width: 1200px) {
+  .nk-dropdown-container {
+    gap: 6px; /* Even smaller gap */
+    padding: 0 10px;
+  }
+  
+  .nk-dropdown-column {
+    min-width: 130px; /* Further reduced */
+    max-width: 145px;
+  }
+  
+  .nk-dropdown-trigger {
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 130px;
+  }
+  
+  .nk-category-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* === LARGE SCREENS (Normal PCs) === */
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .nk-dropdown-container {
+    gap: 8px;
+  }
+  
+  .nk-dropdown-column {
+    min-width: 135px;
+    max-width: 155px;
+  }
+  
+  .nk-dropdown-trigger {
+    padding: 9px 14px;
+    font-size: 12.5px;
+  }
+}
+
+/* === EXTRA LARGE SCREENS === */
+@media (min-width: 1401px) {
+  .nk-dropdown-container {
+    gap: 10px;
+  }
+  
+  .nk-dropdown-column {
+    min-width: 150px;
+    max-width: 170px;
+  }
+  
+  .nk-dropdown-trigger {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+
+/* === Responsive: Hide on Mobile === */
+/* This section hides the dropdown menu on mobile devices */
+/* To enable on mobile in the future, comment out or remove this section */
+@media (max-width: 992px) {
+  .nk-dropdown-menu-wrapper {
+    display: none !important;
+  }
+}
+
+/* === Ensure proper horizontal layout === */
+.nk-dropdown-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}

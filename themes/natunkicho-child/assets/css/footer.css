@@ -1,0 +1,259 @@
+/* ====================================================
+   NatunKicho Master Footer Styles
+   ==================================================== */
+:root {
+    --nk-footer-bg: #0f172a; /* Premium Dark Navy */
+    --nk-footer-text: #94a3b8;
+    --nk-footer-heading: #f8fafc;
+    --nk-footer-accent: #0284c7; /* NatunKicho Blue */
+    --nk-footer-hover: #38bdf8;
+    --nk-footer-border: rgba(255, 255, 255, 0.05);
+}
+
+.nk-site-footer {
+    background-color: var(--nk-footer-bg);
+    color: var(--nk-footer-text);
+    font-family: inherit;
+    overflow: hidden;
+}
+
+.nk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Section 1: Partner Slider (Pure CSS Infinite Loop) --- */
+.nk-footer-partners {
+    background: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+}
+.nk-partner-title {
+    color: #475569;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.nk-partner-track-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.nk-partner-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: nk-marquee 30s linear infinite;
+}
+.nk-partner-track:hover {
+    animation-play-state: paused;
+}
+.nk-partner-logo {
+    padding: 0 30px;
+    filter: grayscale(100%) opacity(0.6);
+    transition: all 0.3s ease;
+}
+.nk-partner-logo:hover {
+    filter: grayscale(0%) opacity(1);
+}
+.nk-partner-logo img {
+    max-height: 40px;
+    width: auto;
+}
+@keyframes nk-marquee {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); } /* -50% because we duplicated the posts inside the track */
+}
+
+/* --- Section 2: Mega Navigation Grid --- */
+.nk-footer-navigation {
+    padding: 70px 0 40px;
+    border-bottom: 1px solid var(--nk-footer-border);
+}
+.nk-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+}
+.nk-footer-col-title {
+    color: var(--nk-footer-heading);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.nk-footer-col-title .dashicons {
+    color: var(--nk-footer-accent);
+    font-size: 18px;
+    width: 18px;
+    height: 18px;
+}
+.nk-mobile-toggle {
+    display: none; /* Hidden on desktop */
+}
+.nk-footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.nk-footer-menu li {
+    margin-bottom: 7px;
+}
+.nk-footer-menu a {
+    color: var(--nk-footer-text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    display: inline-block;
+}
+.nk-footer-menu a:hover {
+    color: var(--nk-footer-hover);
+    transform: translateX(4px);
+}
+
+/* --- Section 3: Community & Newsletter --- */
+.nk-footer-community {
+    padding: 40px 0;
+    border-bottom: 1px solid var(--nk-footer-border);
+}
+.nk-community-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.nk-footer-community h4 {
+    color: var(--nk-footer-heading);
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.nk-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 10px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.nk-social-links a:hover {
+    background: var(--nk-footer-accent);
+}
+/* Stack the inputs and button neatly */
+.nk-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    margin-top: 10px;
+}
+.nk-newsletter-form input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+.nk-newsletter-form button {
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--nk-footer-accent);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+.nk-newsletter-form button:hover {
+    background: var(--nk-footer-hover);
+}
+.nk-app-buttons {
+    display: flex;
+    gap: 10px;
+}
+.nk-app-btn {
+    padding: 10px 15px;
+    border: 1px solid var(--nk-footer-border);
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* --- Section 4: Copyright --- */
+.nk-footer-copyright {
+    padding: 25px 0;
+    font-size: 13px;
+}
+.nk-copyright-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.nk-tagline {
+    opacity: 0.7;
+    margin-top: 5px;
+    display: block;
+}
+.nk-copyright-links a {
+    color: var(--nk-footer-text);
+    text-decoration: none;
+    margin: 0 10px;
+}
+.nk-copyright-links a:hover {
+    color: var(--nk-footer-heading);
+}
+
+/* ====================================================
+   RESPONSIVE DESIGN (TABLET & MOBILE)
+   ==================================================== */
+
+/* Tablet (Max 992px) */
+@media (max-width: 992px) {
+    .nk-footer-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 Columns */
+    }
+}
+
+/* Mobile (Max 768px) */
+@media (max-width: 768px) {
+    /* Make Mega Menu an Accordion */
+    .nk-footer-grid {
+        grid-template-columns: 1fr; /* Stack Columns */
+        gap: 0;
+    }
+    .nk-footer-column {
+        border-bottom: 1px solid var(--nk-footer-border);
+        padding: 15px 0;
+    }
+    .nk-footer-col-title {
+        margin-bottom: 0;
+        cursor: pointer;
+        justify-content: space-between;
+    }
+    .nk-mobile-toggle {
+        display: block;
+        transition: transform 0.3s ease;
+    }
+    .nk-footer-menu-wrapper {
+        display: none; /* Hidden by default on mobile */
+        padding-top: 15px;
+    }
+    /* Community & Copyright Stacking */
+    .nk-community-flex, .nk-copyright-flex {
+        flex-direction: column;
+        text-align: left;
+    }
+}

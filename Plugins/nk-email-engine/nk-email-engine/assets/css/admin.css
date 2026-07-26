@@ -1,0 +1,61 @@
+.nk-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 20px 0;
+}
+
+.nk-card {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 6px;
+    padding: 16px 20px;
+    min-width: 180px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+}
+
+.nk-card h3 {
+    margin: 0 0 8px;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #646970;
+}
+
+.nk-card-value {
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0;
+    color: #1d2327;
+}
+
+.nk-inline-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 16px 0;
+}
+
+.nk-status {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    text-transform: capitalize;
+}
+
+.nk-status-pending    { background: #fff8e5; color: #996800; }
+.nk-status-processing { background: #e5f2ff; color: #0a4b78; }
+.nk-status-sent        { background: #e6f6e6; color: #1e6b1e; }
+.nk-status-failed      { background: #fbeaea; color: #a02020; }
+
+.nk-subscribe-form-wrapper input,
+.nk-subscribe-form-wrapper select {
+    width: 100%;
+    max-width: 320px;
+    padding: 8px;
+    margin-top: 4px;
+}
+
+.nk-subscribe-message {
+    font-weight: 600;
+}
