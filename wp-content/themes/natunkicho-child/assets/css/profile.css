@@ -1,0 +1,729 @@
+.nk-profile-card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    margin-bottom:30px;
+}
+
+.nk-profile-card h2{
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.nk-profile-bio{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.nk-profile-section{
+    margin-bottom:25px;
+}
+
+.nk-profile-section h3{
+    margin-bottom:10px;
+}
+
+.nk-profile-form{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+}
+
+.nk-profile-form label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.nk-profile-form input,
+.nk-profile-form textarea{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.nk-profile-form textarea{
+    min-height:140px;
+}
+
+.nk-profile-form button{
+    background:#0A66C2;
+    color:#fff;
+    border:none;
+    padding:14px 24px;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.nk-profile-progress-card{
+    margin-top:20px;
+}
+
+.nk-progress-bar{
+    width:100%;
+    height:14px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+    margin:15px 0;
+}
+
+.nk-progress-fill{
+    height:100%;
+    background:#0A66C2;
+    border-radius:20px;
+}
+
+/* ==========================================
+   PREMIUM UPGRADE FUNNEL STYLES
+   ========================================== */
+.nk-premium-locked-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+.nk-premium-blurred-content {
+    filter: blur(5px) grayscale(50%);
+    opacity: 0.5;
+    pointer-events: none;
+    user-select: none;
+    padding: 25px;
+}
+
+.nk-premium-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.65);
+    z-index: 10;
+    text-align: center;
+    padding: 20px;
+}
+
+.nk-premium-badge {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(217, 119, 6, 0.2);
+}
+
+.nk-btn-upgrade {
+    background: linear-gradient(135deg, #0A66C2, #0056b3);
+    color: #fff !important;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0 4px 15px rgba(10, 102, 194, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nk-btn-upgrade:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(10, 102, 194, 0.4);
+}
+
+/* ***
+==============================
+Style for founder page
+========================
+*/
+
+/**
+ * Title: Founder Landing Page Styling
+ * Description: Clean, executive-focused styling for NatunKicho Founder Page.
+ */
+
+/* --- CSS VARIABLES & THEMING --- */
+:root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8fafc;
+    --text-main: #1e293b;
+    --text-muted: #64748b;
+    --accent-color: #0f172a;
+    --accent-hover: #334155;
+    --border-color: #e2e8f0;
+    --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02);
+    --radius: 12px;
+    --transition: all 0.3s ease;
+    --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- RESET & LAYOUT DEFAULTS --- */
+.founder-landing-body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-stack);
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+.founder-landing-body * {
+    box-sizing: border-box;
+}
+
+.fnd-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.fnd-narrow-content {
+    max-width: 1000px;
+}
+
+.fnd-section {
+    padding: 100px 0;
+}
+
+.fnd-section-light {
+    background-color: var(--bg-secondary);
+}
+
+.text-center { text-align: center; }
+
+/* --- COMMON UI COMPONENTS --- */
+.fnd-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.fnd-section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-color);
+    margin: 0 0 12px 0;
+    letter-spacing: -0.02em;
+}
+
+.fnd-title-line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--accent-color);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+/* BUTTONS */
+.fnd-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.fnd-center-group {
+    justify-content: center;
+}
+
+.fnd-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.fnd-btn-primary {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+.fnd-btn-primary:hover {
+    background-color: var(--accent-hover);
+}
+
+.fnd-btn-secondary {
+    background-color: var(--border-color);
+    color: var(--text-main);
+}
+
+.fnd-btn-secondary:hover {
+    background-color: #cbd5e1;
+}
+
+.fnd-btn-outline {
+    background-color: transparent;
+    color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.fnd-btn-outline:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+.fnd-btn-white {
+    background-color: var(--bg-primary);
+    color: var(--accent-color);
+}
+
+.fnd-btn-white:hover {
+    background-color: var(--bg-secondary);
+}
+
+.fnd-btn-outline-white {
+    background-color: transparent;
+    color: var(--bg-primary);
+    border: 2px solid var(--bg-primary);
+}
+
+.fnd-btn-outline-white:hover {
+    background-color: var(--bg-primary);
+    color: var(--accent-color);
+}
+
+.fnd-btn-outline-white-subtle {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--bg-primary);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.fnd-btn-outline-white-subtle:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* IMAGE HANDLERS (PLACEHOLDERS & PRODUCTION IMAGES) */
+.fnd-image-placeholder {
+    background-color: #edf2f7;
+    border: 2px dashed #cbd5e1;
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+}
+
+.fnd-real-img {
+    object-fit: cover;
+    object-position: center;
+    border-radius: var(--radius);
+    display: block;
+    width: 100%;
+}
+
+.square-ratio { aspect-ratio: 1 / 1; }
+.landscape-ratio { aspect-ratio: 16 / 10; }
+.icon-ratio { width: 50px; height: 50px; border-radius: 8px; flex-shrink: 0; }
+.cert-ratio { aspect-ratio: 4 / 3; margin-bottom: 16px; }
+.award-ratio { aspect-ratio: 16 / 9; margin-bottom: 16px; }
+.avatar-ratio { width: 48px; height: 48px; border-radius: 50%; flex-shrink: 0; }
+
+/* GRID STRUCTURES */
+.fnd-grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
+.fnd-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.fnd-grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+/* CARDS DEFINITIONS */
+.fnd-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 32px;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+}
+
+.fnd-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* --- HERO SECTION --- */
+.fnd-hero {
+    padding: 120px 0 80px 0;
+    background-color: var(--bg-primary);
+}
+
+.fnd-hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.fnd-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.fnd-hero-title {
+    font-size: 3.25rem;
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 0 0 8px 0;
+    letter-spacing: -0.03em;
+}
+
+.fnd-hero-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    margin: 0 0 24px 0;
+}
+
+.fnd-hero-lead {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* --- QUICK STATISTICS --- */
+.fnd-stats {
+    padding: 60px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.fnd-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+
+.fnd-stat-card {
+    text-align: center;
+}
+
+.fnd-stat-number {
+    display: block;
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 4px;
+}
+
+.fnd-stat-label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* --- MY STORY --- */
+.fnd-story-text p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 24px;
+}
+
+.fnd-story-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* --- GLOBAL EXPERIENCE --- */
+.fnd-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.fnd-card-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.fnd-skills-tag {
+    font-size: 0.9rem;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- INDUSTRIES WORKED --- */
+.fnd-industry-item {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 18px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--accent-color);
+    transition: var(--transition);
+}
+
+.fnd-industry-item:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+/* --- AREAS OF EXPERTISE --- */
+.fnd-expert-icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 16px;
+}
+
+.fnd-card h3 {
+    font-size: 1.25rem;
+    margin: 0 0 12px 0;
+}
+
+.fnd-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.fnd-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-top: 4px;
+}
+
+/* --- PROFESSIONAL JOURNEY --- */
+.fnd-journey-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+
+.fnd-journey-step {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.fnd-step-number {
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.fnd-step-content h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.3rem;
+}
+
+.fnd-step-content p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+/* --- FEATURED PROJECTS --- */
+.fnd-project-card {
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+    transition: var(--transition);
+}
+
+.fnd-project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.fnd-project-info {
+    padding: 24px;
+}
+
+.fnd-project-info h3 {
+    margin: 0 0 12px 0;
+    font-size: 1.25rem;
+}
+
+.fnd-project-info p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* --- SERVICES --- */
+.fnd-service-card {
+    background-color: var(--bg-secondary);
+    border-left: 4px solid var(--accent-color);
+    padding: 24px;
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.fnd-service-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+}
+
+.fnd-service-card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+/* --- FOUNDER VISION & PHILOSOPHY --- */
+.fnd-vision-quote {
+    margin: 0;
+    padding: 0;
+}
+
+.fnd-vision-quote p:first-child {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--accent-color);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.fnd-vision-quote p:last-child {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+}
+
+.fnd-philosophy-box {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 40px;
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* --- CONTINUOUS DEVELOPMENT --- */
+.fnd-tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.fnd-tag {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-main);
+}
+
+/* --- TESTIMONIALS --- */
+.fnd-testimonial-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fnd-quote {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--text-main);
+    margin: 0 0 32px 0;
+}
+
+.fnd-testimonial-user {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fnd-testimonial-user h4 {
+    margin: 0 0 2px 0;
+    font-size: 1rem;
+}
+
+.fnd-testimonial-user p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* --- FINAL CALL TO ACTION --- */
+.fnd-cta {
+    padding: 100px 0;
+    background-color: var(--accent-color);
+    color: var(--bg-primary);
+}
+
+.fnd-cta h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin: 0 0 16px 0;
+    letter-spacing: -0.02em;
+}
+
+.fnd-cta p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* --- RESPONSIVE BREAKPOINTS --- */
+@media (max-width: 1024px) {
+    .fnd-hero-title { font-size: 2.75rem; }
+    .fnd-grid-4 { grid-template-columns: repeat(3, 1fr); }
+    .fnd-stats-grid { grid-template-columns: repeat(3, 1fr); gap: 32px; }
+}
+
+@media (max-width: 768px) {
+    .fnd-section { padding: 60px 0; }
+    .fnd-hero { padding: 60px 0; }
+    .fnd-hero-grid { grid-template-columns: 1fr; gap: 40px; }
+    .fnd-hero-image-wrapper { order: -1; max-width: 320px; margin: 0 auto; }
+    .fnd-grid-3, .fnd-grid-4, .fnd-grid-2 { grid-template-columns: 1fr; gap: 24px; }
+    .fnd-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .fnd-cta h2 { font-size: 2rem; }
+}
+
+@media (max-width: 480px) {
+    .fnd-hero-title { font-size: 2.25rem; }
+    .fnd-stats-grid { grid-template-columns: 1fr; gap: 20px; }
+    .fnd-btn-group { flex-direction: column; width: 100%; }
+    .fnd-btn { width: 100%; }
+}

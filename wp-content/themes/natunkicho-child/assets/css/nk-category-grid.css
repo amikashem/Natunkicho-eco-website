@@ -1,0 +1,238 @@
+/* Container Styling */
+.nk-category-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Main Grid */
+.nk-category-grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+    align-items: stretch; /* Ensure all cards stretch to same height */
+}
+
+/* Category Cards */
+.nk-category-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 25px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure cards take full height */
+}
+
+.nk-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0073aa, #00a8cc);
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+}
+
+.nk-category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.nk-category-card:hover::before {
+    transform: scaleX(1);
+}
+
+/* Icon Styling */
+.nk-cat-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: block;
+    text-align: center;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Category Title */
+.nk-cat-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow content to grow and push button to bottom */
+}
+
+.nk-cat-content h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #2c3e50;
+    line-height: 1.3;
+}
+
+.nk-cat-content h3 a {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nk-cat-content h3 a:hover {
+    color: #0073aa;
+}
+
+/* Posts Container */
+.nk-cat-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 25px;
+    flex-grow: 1; /* Allow posts to take available space */
+}
+
+/* Individual Post Items */
+.nk-subpost {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    padding: 0;
+    background: transparent;
+}
+
+.nk-subpost:hover {
+    transform: translateY(-2px);
+}
+
+/* Image Container for consistent sizing */
+.nk-image-container {
+    width: 100%;
+    height: 140px; /* Fixed height for all images */
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.nk-post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures images cover the container without distortion */
+    transition: all 0.3s ease;
+}
+
+.nk-subpost:hover .nk-post-image {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.nk-post-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #34495e;
+    line-height: 1.4;
+    margin: 0;
+    text-align: left;
+    transition: color 0.3s ease;
+    /* Ensure consistent title height by limiting to 2 lines */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 2.8em; /* Approximate height for 2 lines */
+}
+
+.nk-subpost:hover .nk-post-title {
+    color: #0073aa;
+}
+
+/* Button Container - ensures consistent button placement */
+.nk-button-container {
+    margin-top: auto; /* Push button to bottom of card */
+}
+
+/* More Button */
+.nk-more-btn {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #0073aa, #00a8cc);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nk-more-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.nk-more-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 115, 170, 0.3);
+    color: #ffffff;
+}
+
+.nk-more-btn:hover::before {
+    left: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+    .nk-category-grid-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nk-category-grid-container {
+        padding: 0 15px;
+    }
+    
+    .nk-category-grid-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin: 30px 0;
+    }
+    
+    .nk-category-card {
+        padding: 25px 20px;
+    }
+    
+    .nk-cat-icon {
+        font-size: 2.5rem;
+        margin-bottom: 12px;
+        height: 60px;
+    }
+    
+    .nk-cat-content h3 {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    
+    .nk-image-container {
+        height: 120px;
+    }
+}

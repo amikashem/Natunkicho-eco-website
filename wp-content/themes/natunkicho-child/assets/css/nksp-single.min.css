@@ -1,0 +1,595 @@
+/* =========================================================
+   NKSP SINGLE POST LAYOUT
+   Clean Astra-Compatible Version
+========================================================= */
+
+/* ===== ASTRA WIDTH FIX ===== */
+
+.single-post .ast-container{
+    max-width: 100% !important;
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.single-post #primary{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.single-post article{
+    padding: 0 !important;
+}
+
+/* ===== MAIN WRAPPER ===== */
+
+.nksp-single-wrapper{
+    width: 100%;
+    background: #ffffff;
+    padding: 30px 0 60px;
+    overflow: visible;
+}
+
+/* ===== MAIN CONTAINER ===== */
+
+.nksp-container{
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+
+    position: relative;
+    overflow: visible;
+}
+
+/* ===== MAIN CONTENT ===== */
+
+.nksp-main-content{
+    flex: 1;
+    min-width: 0;
+
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: visible;
+}
+
+/* ===== SIDEBAR ===== */
+
+.nksp-sidebar{
+    width: 320px;
+    flex-shrink: 0;
+
+    position: sticky;
+    top: 20px;
+
+    align-self: flex-start;
+
+    height: fit-content;
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+}
+
+/* ===== ARTICLE ===== */
+
+.nksp-article{
+    width: 100%;
+}
+
+/* ===== HEADER ===== */
+
+.nksp-entry-header{
+    margin-bottom: 30px;
+}
+
+.nksp-title{
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.25;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 20px;
+}
+
+.nksp-meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* ===== FEATURED IMAGE ===== */
+
+.nksp-featured-image{
+    margin: 30px 0;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.nksp-featured-img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* ===== CONTENT ===== */
+
+.nksp-content{
+    font-size: 18px;
+    line-height: 1.9;
+    color: #374151;
+}
+
+.nksp-content p{
+    margin-bottom: 1.7em;
+}
+
+.nksp-content h2{
+    font-size: 32px;
+    line-height: 1.3;
+    margin: 2em 0 0.8em;
+    color: #111827;
+}
+
+.nksp-content h3{
+    font-size: 26px;
+    line-height: 1.4;
+    margin: 1.8em 0 0.7em;
+    color: #111827;
+}
+
+.nksp-content img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.nksp-content ul,
+.nksp-content ol{
+    padding-left: 22px;
+    margin-bottom: 1.5em;
+}
+
+.nksp-content blockquote{
+    margin: 30px 0;
+    padding: 20px 25px;
+    border-left: 4px solid #2563eb;
+    background: #f8fafc;
+    border-radius: 10px;
+}
+
+/* ===== SOCIAL SHARE ===== */
+
+.nksp-social-share{
+    margin-top: 50px;
+    padding: 30px;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    background: #f9fafb;
+}
+
+.nksp-share-header{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.nksp-share-label{
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.nksp-share-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+}
+
+.nksp-share-btn{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 18px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+
+    color: #374151;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.nksp-share-btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+.nksp-share-fb:hover{
+    background: #1877f2;
+    border-color: #1877f2;
+    color: #fff;
+}
+
+.nksp-share-in:hover{
+    background: #0a66c2;
+    border-color: #0a66c2;
+    color: #fff;
+}
+
+.nksp-share-pin:hover{
+    background: #e60023;
+    border-color: #e60023;
+    color: #fff;
+}
+
+.nksp-share-email:hover{
+    background: #ea4335;
+    border-color: #ea4335;
+    color: #fff;
+}
+
+.nksp-share-copy:hover{
+    background: #10b981;
+    border-color: #10b981;
+    color: #fff;
+}
+
+/* ===== RELATED POSTS ===== */
+
+.nksp-you-may-also{
+    margin-top: 60px;
+
+    padding: 35px;
+
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+
+    background: #f9fafb;
+}
+
+.nksp-section-header{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.nksp-section-title{
+    font-size: 28px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 8px;
+}
+
+.nksp-section-subtitle{
+    color: #6b7280;
+}
+
+.nksp-related-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.nksp-related-item{
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+
+    padding: 20px;
+
+    transition: 0.3s ease;
+}
+
+.nksp-related-item:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.nksp-related-link{
+    text-decoration: none;
+}
+
+.nksp-related-title{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #111827;
+    font-weight: 600;
+}
+
+/* ===== SIDEBAR ===== */
+
+.nksp-sidebar-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ===== WIDGET ===== */
+
+.nksp-widget{
+    background: #ffffff;
+
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+
+    padding: 24px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.nksp-widget-title{
+    font-size: 20px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    color: #111827;
+}
+
+/* ===== WIDGET LIST ===== */
+
+.nksp-widget-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nksp-list-item{
+    margin-bottom: 14px;
+}
+
+.nksp-list-link{
+    text-decoration: none;
+    color: #374151;
+
+    transition: 0.3s ease;
+}
+
+.nksp-list-link:hover{
+    color: #2563eb;
+}
+
+.nksp-list-title{
+    line-height: 1.5;
+}
+
+/* ===== NEWSLETTER ===== */
+
+.nksp-newsletter-content{
+    text-align: center;
+}
+
+.nksp-newsletter-text{
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+
+.nksp-form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.nksp-form-input{
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+
+    font-size: 15px;
+}
+
+.nksp-form-input:focus{
+    outline: none;
+    border-color: #2563eb;
+}
+
+.nksp-form-submit{
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: #fff;
+
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.nksp-form-submit:hover{
+    background: #1d4ed8;
+}
+
+/* ===== SOCIAL LINKS ===== */
+
+.nksp-social-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.nksp-social-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    padding: 12px;
+
+    border-radius: 10px;
+
+    text-decoration: none;
+
+    background: #f3f4f6;
+    color: #374151;
+
+    transition: 0.3s ease;
+}
+
+.nksp-social-link:hover{
+    transform: translateY(-2px);
+}
+
+/* ===== COMMENTS ===== */
+
+.nksp-comments-section{
+    margin-top: 60px;
+
+    padding: 30px;
+
+    border-radius: 14px;
+    border: 1px solid #e5e7eb;
+
+    background: #ffffff;
+}
+
+.nksp-comments-title{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #111827;
+}
+
+/* ===== WP COMMENTS ===== */
+
+.comment-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-body{
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.comment-author img{
+    border-radius: 999px;
+}
+
+.comment-form textarea,
+.comment-form input{
+    width: 100%;
+    padding: 12px 14px;
+
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+}
+
+.comment-form input[type="submit"]{
+    background: #111827;
+    color: #fff;
+
+    border: none;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.comment-form input[type="submit"]:hover{
+    opacity: 0.9;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1024px){
+
+    .nksp-container{
+        flex-direction: column;
+    }
+
+    .nksp-sidebar{
+        width: 100%;
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+
+    .nksp-sidebar-inner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .nksp-related-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px){
+
+    .nksp-single-wrapper{
+        padding-top: 20px;
+    }
+
+    .nksp-container{
+        width: calc(100% - 24px);
+        gap: 25px;
+    }
+
+    .nksp-title{
+        font-size: 32px;
+    }
+
+    .nksp-content{
+        font-size: 16px;
+    }
+
+    .nksp-social-share,
+    .nksp-you-may-also,
+    .nksp-comments-section{
+        padding: 20px;
+    }
+
+    .nksp-sidebar{
+        display: none;
+    }
+
+    .nksp-social-links{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px){
+
+    .nksp-title{
+        font-size: 28px;
+    }
+
+    .nksp-share-buttons{
+        flex-direction: column;
+    }
+
+    .nksp-share-btn{
+        width: 100%;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,1107 @@
+.nk-apply-job-btn{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:12px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.nk-apply-job-btn:hover{
+    opacity:0.9; 
+}
+ 
+ /* Hide the default WP Job Manager job grid */
+.job_listings ul.job_listings {
+    display: none !important;
+} 
+
+/* =========================================
+   BULLETPROOF HOME PAGE HERO SEARCH BAR
+========================================= */
+.nk-hero-search-container {
+    max-width: 900px !important;
+    margin: 0 auto !important;
+    background: #fff !important;
+    padding: 10px 10px 10px 25px !important;
+    border-radius: 60px !important;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15) !important;
+    border: none !important;
+}
+
+.nk-hero-search-form {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+.nk-search-input-group {
+    display: flex !important;
+    align-items: center !important;
+    flex: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nk-search-input-group.divider {
+    border-left: 2px solid #e5e7eb !important;
+    padding-left: 20px !important;
+    margin-left: 10px !important;
+}
+
+/* Force the inputs to drop theme borders and backgrounds */
+.nk-search-input-group input {
+    width: 100% !important;
+    border: none !important;
+    outline: none !important;
+    padding: 18px 0 !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    border-radius: 0 !important; 
+    min-height: 0 !important;
+}
+
+.nk-hero-search-btn {
+    background: #0A66C2 !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 18px 45px !important;
+    border-radius: 50px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: 0.3s ease !important;
+    white-space: nowrap !important;
+    margin-left: 10px !important;
+    display: inline-block !important;
+    line-height: 1 !important;
+    height: auto !important;
+}
+
+.nk-hero-search-btn:hover {
+    background: #084d94 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 768px) {
+    .nk-hero-search-container {
+        border-radius: 20px !important;
+        padding: 20px !important;
+    }
+    .nk-hero-search-form {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    .nk-search-input-group {
+        width: 100% !important;
+    }
+    .nk-search-input-group.divider {
+        border-left: none !important;
+        border-top: 2px solid #e5e7eb !important;
+        padding-left: 0 !important;
+        padding-top: 15px !important;
+        margin-left: 0 !important;
+    }
+    .nk-hero-search-btn {
+        width: 100% !important;
+        border-radius: 12px !important;
+        padding: 18px !important;
+        margin-left: 0 !important;
+    }
+}
+
+    /* ==================================================
+   PROFESSIONAL UNIFIED JOB GRID - REBUILT
+   ================================================== */
+
+/* The Container - Use this for ALL job grids */
+.nk-force-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 28px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* The Job Card */
+.nk-global-job-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 20px;
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    min-height: 320px;
+    border: 1px solid #e2e8f0;
+}
+
+.nk-global-job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* Source Badge */
+.nk-job-source {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    padding: 6px 14px;
+    border-radius: 50px;
+    background: #eef4ff;
+    color: #0A66C2;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Fix for Mobile */
+@media(max-width: 768px) {
+    .nk-force-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+/* =========================================
+   JOB LISTINGS
+========================================= */
+
+.job_listings{
+    margin-top:40px;
+}
+
+.job_listings ul.job_listings{
+    display:grid !important;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+.job_listings .job_listing{
+    position:relative;
+    background:#fff;
+    border:none !important;
+    border-radius:18px;
+    padding:25px !important;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    transition:0.3s ease;
+    overflow:hidden;
+    min-height:180px;
+}
+
+.job_listings .job_listing:hover{
+    transform:translateY(-5px);
+}
+
+.job_listings .job_listing > a{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    text-decoration:none;
+    color:#111;
+    background:none !important;
+    padding:0 !important;
+    box-shadow:none !important;
+}
+
+.job_listings .company_logo{
+    width:70px;
+    height:70px;
+    object-fit:contain;
+    border-radius:12px;
+    background:#f5f5f5;
+    padding:10px;
+}
+
+.job_listings .position{
+    flex:1;
+}
+
+.job_listings .position h3{
+    font-size:22px;
+    font-weight:700;
+    margin-bottom:10px;
+    color:#111;
+    transition:0.3s ease;
+}
+
+.job_listings .job_listing:hover .position h3{
+    color:#0A66C2;
+}
+
+.job_listings .company strong{
+    display:block;
+    font-size:15px;
+    margin-bottom:6px;
+}
+
+.job_listings .tagline{
+    color:#666;
+    font-size:14px;
+}
+
+.job_listings .location{
+    margin-top:10px;
+    color:#777;
+    font-size:15px;
+}
+
+.job_listings .meta{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    margin-top:15px;
+    padding:0 !important;
+    background:none !important;
+    list-style:none;
+}
+
+.job_listings .meta li{
+    margin:0;
+}
+
+.job_listings .job-type{
+    background:#eef4ff;
+    color:#0A66C2;
+    padding:6px 12px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.job_listings .date{
+    color:#888;
+    font-size:14px;
+}
+
+/* SAVE BUTTON */
+.nk-save-job-btn{
+    position:absolute;
+    top:20px;
+    right:20px;
+
+    border:none;
+    border-radius:10px;
+
+    background:#f3f5f7;
+    color:#111;
+
+    padding:10px 16px;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.nk-save-job-btn:hover{
+    background:#0A66C2;
+    color:#fff;
+}
+
+/* SEARCH FILTER */
+.job_filters{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.06);
+    margin-bottom:40px;
+}
+
+.job_filters .search_jobs{
+    display:flex;
+    gap:20px;
+}
+
+.job_filters input,
+.job_filters select{
+    height:55px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:0 15px;
+    font-size:15px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    .job_listings ul.job_listings{
+        grid-template-columns:1fr;
+    }
+
+    .job_filters .search_jobs{
+        flex-direction:column;
+    }
+
+} 
+/* SAVED STATE */
+.nk-save-job-btn.saved{
+    background:#0A66C2;
+    color:#fff;
+}  
+ 
+
+/* =========================================
+   PROFESSIONAL UNIFIED JOB GRID
+========================================= */
+
+.nk-search-results{
+    margin-top:40px;
+}
+
+/* GRID */
+
+.nk-force-grid{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:28px;
+    align-items:stretch;
+}
+
+/* CARD */
+
+.nk-global-job-card{
+    position:relative;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.05);
+
+    transition:0.3s ease;
+
+    overflow:hidden;
+
+    min-height:320px;
+}
+
+.nk-global-job-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* SOURCE BADGE */
+
+.nk-job-source{
+    position:absolute;
+    top:22px;
+    right:22px;
+
+    padding:7px 14px;
+
+    border-radius:50px;
+
+    background:#eef4ff;
+    color:#0A66C2;
+
+    font-size:12px;
+    font-weight:700;
+
+    letter-spacing:0.3px;
+}
+
+.nk-job-source.adzuna{
+    background:#fff3e8;
+    color:#ff8800;
+}
+
+.nk-job-source.jsearch{
+    background:#e9fff2;
+    color:#00a651;
+}
+
+/* TITLE */
+
+.nk-global-job-card h3{
+    margin:0 0 16px;
+    padding-right:90px;
+
+    font-size:24px;
+    line-height:1.4;
+    font-weight:700;
+}
+
+.nk-global-job-card h3 a{
+    color:#111;
+    text-decoration:none;
+}
+
+.nk-global-job-card h3 a:hover{
+    color:#0A66C2;
+}
+
+/* COMPANY */
+
+.nk-global-job-card .company{
+    font-size:16px;
+    font-weight:600;
+    color:#222;
+
+    margin-bottom:10px;
+}
+
+/* LOCATION */
+
+.nk-global-job-card .location{
+    font-size:15px;
+    color:#666;
+
+    margin-bottom:18px;
+}
+
+/* DESCRIPTION */
+
+.nk-global-job-card .description{
+    color:#555;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
+    flex-grow:1;
+}
+
+/* ACTIONS */
+
+.nk-job-actions{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    margin-top:auto;
+}
+
+/* PRIMARY BUTTON */
+
+.nk-btn-primary{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:48px;
+
+    padding:0 22px;
+
+    border-radius:12px;
+
+    background:#0A66C2;
+
+    color:#fff !important;
+
+    font-size:15px;
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:0.3s ease;
+}
+
+.nk-btn-primary:hover{
+    background:#084d94;
+}
+
+/* SAVE BUTTON */
+
+.nk-global-job-card .nk-save-job-btn{
+    position:static !important;
+
+    height:48px;
+
+    padding:0 18px !important;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f3f5f7 !important;
+
+    color:#111 !important;
+
+    font-size:14px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s ease;
+}
+
+.nk-global-job-card .nk-save-job-btn:hover{
+    background:#0A66C2 !important;
+    color:#fff !important;
+}
+
+/* MOBILE */
+
+@media(max-width:992px){
+
+    .nk-force-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nk-global-job-card{
+        padding:24px;
+        min-height:auto;
+    }
+
+    .nk-global-job-card h3{
+        font-size:21px;
+    }
+
+}
+/* Ensure the container is a responsive grid */
+.nk-force-grid {
+    display: grid;
+    /* This creates a responsive grid: 1 column on mobile, 2 or 3 on desktop */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Ensure the card is a consistent block */
+.nk-global-job-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    border-radius: 12px;
+    height: 100%; /* Ensures all cards in a row are the same height */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Ensure images/titles don't break the layout */
+.nk-global-job-card h3 {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.4;
+} 
+.nk-btn-primary.loading, .nk-apply-job-btn.loading {
+    opacity: 0.7;
+    cursor: wait;
+    position: relative;
+}
+.nk-btn-primary.loading::after {
+    content: "...";
+    margin-left: 8px;
+} 
+/* =========================================
+   HOME PAGE FEATURED JOBS
+========================================= */
+.nk-featured-jobs-container {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.nk-section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.nk-section-header h2 {
+    font-size: 36px !important;
+    font-weight: 800 !important;
+    color: #111 !important;
+    margin-bottom: 15px;
+}
+
+.nk-section-header p {
+    font-size: 18px !important;
+    color: #666 !important;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 3-Column Grid for Home Page */
+.nk-featured-jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Ensure the cards look exactly like the search page */
+.nk-featured-jobs-grid .nk-global-job-card {
+    height: 100%;
+}
+
+.nk-view-all-wrapper {
+    text-align: center;
+}
+
+.nk-btn-large {
+    padding: 18px 45px !important;
+    font-size: 16px !important;
+    border-radius: 50px !important;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 1024px) {
+    .nk-featured-jobs-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media(max-width: 768px) {
+    .nk-featured-jobs-grid {
+        grid-template-columns: 1fr;
+    }
+    .nk-section-header h2 {
+        font-size: 28px !important;
+    }
+} 
+/* =========================================
+   EASY AUTH SPLIT SCREEN
+========================================= */
+.nk-auth-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+
+/* Left Visual Side */
+.nk-auth-visual {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+
+.nk-auth-visual-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.8));
+    z-index: 1;
+}
+
+.nk-auth-visual-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    max-width: 500px;
+}
+
+.nk-auth-visual-content h2 {
+    font-size: 36px !important;
+    font-weight: 700 !important;
+    color: #fff !important;
+    margin-bottom: 15px;
+}
+
+.nk-auth-visual-content p {
+    font-size: 18px !important;
+    color: #e5e7eb !important;
+    line-height: 1.6;
+}
+
+/* Right Form Side */
+.nk-auth-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #fff;
+}
+
+.nk-auth-form-container {
+    width: 100%;
+    max-width: 450px;
+}
+
+.nk-auth-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* The Role Toggle */
+.nk-role-toggle {
+    display: flex;
+    background: #f3f4f6;
+    border-radius: 12px;
+    padding: 6px;
+    margin-bottom: 30px;
+}
+
+.nk-toggle-btn {
+    flex: 1;
+    border: none;
+    background: transparent;
+    padding: 12px 0;
+    font-size: 15px;
+    font-weight: 600;
+    color: #6b7280;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nk-toggle-btn.active {
+    background: #fff;
+    color: #0A66C2;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Divider */
+.nk-auth-divider {
+    text-align: center;
+    position: relative;
+    margin: 30px 0;
+}
+
+.nk-auth-divider::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e5e7eb;
+    z-index: 1;
+}
+
+.nk-auth-divider span {
+    background: #fff;
+    padding: 0 15px;
+    color: #6b7280;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.nk-auth-footer-link {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #4b5563;
+}
+
+.nk-auth-footer-link a {
+    color: #0A66C2;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Mobile Responsiveness */
+@media(max-width: 992px) {
+    .nk-auth-wrapper {
+        flex-direction: column;
+    }
+    .nk-auth-visual {
+        min-height: 300px;
+        flex: none;
+        padding: 40px 20px;
+    }
+    .nk-auth-panel {
+        padding: 40px 20px;
+    }
+} 
+/* =========================================
+   FIND JOBS PAGE - INLINE SEARCH BAR
+========================================= */
+.job_filters {
+    background: #fff !important;
+    padding: 10px 10px 10px 25px !important;
+    border-radius: 60px !important; /* Premium Pill Shape */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08) !important;
+    margin-bottom: 40px !important;
+    border: none !important;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.job_filters form {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+}
+
+/* Target the input wrappers */
+.job_filters .search_keywords,
+.job_filters .search_location {
+    flex: 1 !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Add a clean divider line between keyword and location */
+.job_filters .search_location {
+    border-left: 2px solid #e5e7eb !important;
+    padding-left: 20px !important;
+    margin-left: 10px !important;
+}
+
+/* Clean up the input fields (Remove default borders/backgrounds) */
+.job_filters input[type="text"] {
+    width: 100% !important;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    height: 55px !important;
+    padding: 0 !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* Style the Find Jobs Button */
+.job_filters .search_submit {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.job_filters .search_submit button,
+.job_filters input[type="submit"] {
+    background: #0A66C2 !important;
+    color: #fff !important;
+    border: none !important;
+    height: 55px !important;
+    padding: 0 45px !important;
+    border-radius: 50px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: 0.3s ease !important;
+    margin-left: 10px !important;
+    white-space: nowrap !important;
+}
+
+.job_filters .search_submit button:hover,
+.job_filters input[type="submit"]:hover {
+    background: #084d94 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Mobile Responsiveness - Stack them neatly on phone screens */
+@media(max-width: 768px) {
+    .job_filters {
+        border-radius: 20px !important; 
+        padding: 20px !important;
+    }
+    .job_filters form {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+    .job_filters .search_keywords,
+    .job_filters .search_location {
+        width: 100% !important;
+    }
+    .job_filters .search_location {
+        border-left: none !important;
+        border-top: 2px solid #e5e7eb !important;
+        padding-left: 0 !important;
+        padding-top: 15px !important;
+        margin-left: 0 !important;
+    }
+    .job_filters .search_submit,
+    .job_filters .search_submit button,
+    .job_filters input[type="submit"] {
+        width: 100% !important;
+        margin-left: 0 !important;
+        border-radius: 12px !important;
+    }
+}
+
+/* =========================================
+   PREMIUM JOB PORTAL SEARCH BAR
+========================================= */
+.nk-premium-search-bar {
+    background: #fff;
+    padding: 10px 10px 10px 20px;
+    border-radius: 60px; /* The Premium Pill Shape */
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nk-search-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nk-search-input-group {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 15px;
+}
+
+.nk-search-icon {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+/* Strip default styling from inputs */
+.nk-search-input-group input {
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    background: transparent !important;
+    height: 50px !important;
+    font-size: 16px !important;
+    color: #333 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+}
+
+/* Subtle divider line between Keyword and Location */
+.nk-search-divider {
+    width: 2px;
+    height: 40px;
+    background: #e5e7eb;
+}
+
+/* The Action Button */
+.nk-search-submit-btn {
+    background: #0A66C2 !important;
+    color: #fff !important;
+    border: none !important;
+    height: 55px !important;
+    padding: 0 45px !important;
+    border-radius: 50px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    cursor: pointer !important;
+    transition: 0.3s ease !important;
+    white-space: nowrap !important;
+}
+
+.nk-search-submit-btn:hover {
+    background: #084d94 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 8px 20px rgba(10, 102, 194, 0.2);
+}
+
+/* Mobile Responsiveness - Stacks cleanly on phones */
+@media (max-width: 768px) {
+    .nk-premium-search-bar {
+        border-radius: 20px;
+        padding: 20px;
+    }
+    .nk-search-form {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nk-search-divider {
+        width: 100%;
+        height: 2px;
+    }
+    .nk-search-submit-btn {
+        width: 100%;
+        border-radius: 12px !important;
+    }
+} 
+
+/*  job share button  */
+
+.nk-share-container {
+    margin: 30px 0;
+    padding-top: 20px;
+    border-top: 1px solid #eaeaea;
+}
+
+.nk-share-title {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    color: #666;
+}
+
+.nk-share-buttons {
+    display: flex;
+    gap: 22px; /* Increased spacing between icons */
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.nk-share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent !important; /* No background */
+    border: none !important;             /* No border */
+    padding: 0 !important;
+    margin: 0;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effects for clean glyphs */
+.nk-share-btn:hover {
+    transform: translateY(-3px);
+    opacity: 0.75;
+}
+
+/* Standardizing icon canvas sizes for borderless layout */
+.nk-share-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Direct Brand Glyph Coloring */
+.nk-share-native { color: #007bb5; gap: 6px; font-weight: 500; font-size: 15px; }
+.nk-share-native svg { stroke: #007bb5; }
+.nk-fb svg { fill: #1877F2; }
+.nk-x svg { fill: #000000; }
+.nk-linkedin svg { fill: #0A66C2; }
+.nk-wa svg { fill: #25D366; }
+
+/* Copy link matches flawlessly now */
+.nk-copy svg { 
+    stroke: #495057; /* Clean, dark slate grey matching the family */
+    fill: none; 
+}

@@ -1,0 +1,33 @@
+nk-email-engine
+├── admin
+│   ├── analytics.php
+│   ├── campaigns.php
+│   ├── class-admin-menu.php
+│   ├── dashboard.php
+│   ├── queue.php
+│   ├── settings.php
+│   ├── subscribers.php
+│   ├── suppression.php
+│   └── templates.php
+├── assets
+│   ├── css
+│   │   └── admin.css
+│   └── js
+│       └── admin.js
+├── cron
+│   └── process-email-queue.php
+├── includes
+│   ├── class-database.php
+│   ├── class-email-logger.php
+│   ├── class-email-queue.php
+│   ├── class-installer.php
+│   ├── class-provider-manager.php
+│   ├── class-shortcodes.php
+│   ├── class-subscriber-manager.php
+│   └── class-template-manager.php
+├── nk-email-engine.php
+├── providers
+│   ├── class-amazon-ses.php
+│   ├── class-brevo.php
+│   └── interface-nk-email-provider.php
+└── structure.txt

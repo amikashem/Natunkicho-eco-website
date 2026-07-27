@@ -1,0 +1,278 @@
+
+.nk-calculator {
+  max-width: 480px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fafafa;
+}
+
+.nk-field {
+  margin-bottom: 15px;
+}
+
+.nk-field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.nk-field input,
+.nk-field select {
+  width: 100%;
+  padding: 8px;
+}
+
+.nk-btn {
+  width: 100%;
+  padding: 10px;
+  background: #111;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.nk-result {
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.nk-disclaimer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #666;
+}
+.nk-calculator-title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.nk-calculator-intro {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.nk-field small {
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 3px;
+}
+
+.nk-result {
+  background: #f1f1f1;
+  padding: 12px;
+  border-left: 4px solid #111;
+}
+
+.nk-btn:hover {
+  opacity: 0.9;
+}
+/* ======================================
+   NK FOOD COST CALCULATOR – UI REDESIGN
+====================================== */
+
+
+/* Main container refinement */
+.elementor .nk-fc-calculator {
+    max-width: 1320px;
+    margin: 50px auto;
+    padding: 0;
+}
+
+/* Card style */
+.elementor .nk-fc-row {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 30px;
+    margin-bottom: 35px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.elementor .nk-fc-row h3 {
+    font-size: 22px;
+    margin-bottom: 22px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 12px;
+}
+
+.elementor .nk-fc-row h4 {
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+/* ======================
+   GRID (3 COLUMNS)
+====================== */
+.elementor .nk-fc-advanced-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 2.3fr 1.1fr;
+    gap: 28px;
+}
+
+/* ======================
+   COLUMN 1 – RECIPE INFO
+====================== */
+.elementor .nk-fc-recipe-info label {
+    font-size: 13px;
+    margin-top: 16px;
+    display: block;
+    color: #555;
+}
+
+.elementor .nk-fc-recipe-info input {
+    width: 70%;
+    padding: 11px 12px;
+    margin-top: 6px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Premium block */
+.elementor .nk-fc-recipe-info .nk-fc-premium {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px dashed #ddd;
+    background: #fafafa;
+}
+
+.elementor .nk-fc-recipe-info .nk-fc-premium label::after {
+    content: " ★ Advanced";
+    font-size: 11px;
+    color: #c88a00;
+}
+
+/* ======================
+   COLUMN 2 – INGREDIENTS
+====================== */
+.elementor .nk-fc-ingredients h4 {
+    margin-bottom: 12px;
+}
+
+.elementor .nk-fc-ingredient-table {
+    width: 90%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.elementor .nk-fc-ingredient-table th {
+    background: #f4f6f8;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+
+.elementor .nk-fc-ingredient-table td {
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+
+.elementor .nk-fc-ingredient-table input {
+    width: 70%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    text-align: center;
+}
+
+.elementor .nk-fc-add-ingredient {
+    margin-top: 14px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1px dashed #999;
+    background: #fafafa;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.elementor .nk-fc-add-ingredient:hover {
+    background: #f0f0f0;
+}
+
+/* ======================
+   COLUMN 3 – RESULTS
+====================== */
+.elementor .nk-fc-results {
+    background: #f8fafc;
+    border-radius: 12px;
+    padding: 20px;
+    border-left: 4px solid #111;
+}
+
+.elementor .nk-fc-results p {
+    display: flex;
+    justify-content: space-between;
+    margin: 14px 0;
+    font-size: 14px;
+}
+
+.elementor .nk-fc-results span {
+    font-weight: 700;
+}
+
+/* Highlight food cost */
+.elementor .nk-fc-food-cost-percent {
+    color: #c0392b;
+}
+
+/* ======================
+   NOTES ROW
+====================== */
+.elementor .nk-fc-notes textarea {
+    width: 90%;
+    min-height: 110px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 1024px) {
+    .elementor .nk-fc-advanced-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .elementor .nk-fc-results {
+        margin-top: 20px;
+    }
+}
+/* ==============================
+   PREMIUM MODULE UI
+============================== */
+
+.elementor .nk-fc-premium {
+    background: #fffaf0;
+    border: 1px dashed #e0c97f;
+    border-radius: 10px;
+    padding: 14px 12px;
+    margin-top: 18px;
+}
+
+.elementor .nk-fc-premium label {
+    font-weight: 600;
+    color: #7a5a00;
+}
+
+.elementor .nk-fc-premium small {
+    display: block;
+    font-size: 12px;
+    color: #8a7a3a;
+    margin-top: 4px;
+}
+
+.elementor .nk-fc-premium::before {
+    content: "⭐ Advanced / Professional Use";
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b8860b;
+    margin-bottom: 8px;
+}

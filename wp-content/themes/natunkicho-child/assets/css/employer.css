@@ -1,0 +1,234 @@
+.nk-dashboard-wrapper{
+    display:flex;
+    gap:30px;
+    margin-top:40px;
+}
+
+.nk-dashboard-sidebar{
+    width:260px;
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.nk-dashboard-sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:20px 0 0;
+}
+
+.nk-dashboard-sidebar li{
+    margin-bottom:12px;
+}
+
+.nk-dashboard-sidebar a{
+    text-decoration:none;
+    color:#111;
+    font-weight:600;
+}
+
+.nk-dashboard-content{
+    flex:1;
+}
+
+.nk-dashboard-cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin-top:30px;
+}
+
+.nk-dashboard-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+@media(max-width:768px){
+
+    .nk-dashboard-wrapper{
+        flex-direction:column;
+    }
+
+    .nk-dashboard-sidebar{
+        width:100%;
+    }
+
+    .nk-dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+} 
+ /*=== company profile ==== */
+ 
+ .nk-company-profile{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    margin-top:40px;
+}
+
+.nk-company-form{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.nk-company-form input,
+.nk-company-form textarea{
+    width:100%;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:14px 16px;
+    font-size:15px;
+}
+
+.nk-company-form button{
+    height:55px;
+    border:none;
+    border-radius:12px;
+    background:#0A66C2;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.nk-success{
+    background:#e9f9ef;
+    color:#1a7f37;
+    padding:14px 18px;
+    border-radius:12px;
+    margin-bottom:20px;
+} 
+
+/* my job style */ 
+
+.nk-manage-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.nk-post-job-btn{
+    background:#0A66C2;
+    color:#fff;
+    padding:12px 20px;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nk-manage-jobs-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.nk-manage-job-card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.nk-job-status{
+    margin-top:10px;
+    color:#666;
+}
+
+.nk-job-actions{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.nk-btn-view,
+.nk-btn-edit{
+    padding:10px 18px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nk-btn-view{
+    background:#f3f5f7;
+    color:#111;
+}
+
+.nk-btn-edit{
+    background:#0A66C2;
+    color:#fff;
+}
+
+@media(max-width:768px){
+
+    .nk-manage-jobs-grid{
+        grid-template-columns:1fr;
+    }
+
+    .nk-manage-header{
+        flex-direction:column;
+        gap:15px;
+        align-items:flex-start;
+    }
+
+}
+
+/* applicant manage section */
+
+.nk-apply-btn,
+.nk-login-apply{
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:10px 18px;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.nk-applications-dashboard{
+    margin-top:40px;
+}
+
+.nk-application-job{
+    margin-bottom:40px;
+}
+
+.nk-applicants-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-top:20px;
+}
+
+.nk-applicant-card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+}
+
+.nk-view-cv{
+    display:inline-block;
+    margin-top:15px;
+    background:#0A66C2;
+    color:#fff;
+    padding:10px 16px;
+    border-radius:10px;
+    text-decoration:none;
+}
+
+@media(max-width:768px){
+
+    .nk-applicants-grid{
+        grid-template-columns:1fr;
+    }
+
+}

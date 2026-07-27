@@ -1,0 +1,133 @@
+/* Natun Kicho Translate - MINIMAL WORKING CSS */
+
+/* Floating Container */
+#nk-translate-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99999;
+}
+
+/* Toggle Button */
+#nk-translate-toggle {
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(26, 115, 232, 0.3);
+}
+
+#nk-translate-toggle:hover {
+    background: #0d62d9;
+}
+
+#nk-translate-toggle.loading {
+    opacity: 0.7;
+    cursor: wait;
+}
+
+.translate-icon {
+    font-size: 18px;
+}
+
+/* Language Panel */
+#nk-translate-panel {
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+    width: 200px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    border: 1px solid #ddd;
+    display: none;
+}
+
+.nk-header {
+    padding: 12px 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.nk-close-panel {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+}
+
+.nk-close-panel:hover {
+    color: #000;
+}
+
+/* Language List */
+.nk-lang-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.nk-lang-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.nk-lang-item:hover {
+    background: #f0f7ff;
+}
+
+.nk-lang-item.active {
+    background: #e8f0fe;
+    color: #1a73e8;
+    font-weight: 500;
+}
+
+.nk-lang-item:last-child {
+    border-bottom: none;
+}
+
+/* Google Translate Fixes */
+.goog-te-banner-frame,
+.goog-te-banner,
+.skiptranslate {
+    display: none !important;
+}
+
+body {
+    top: 0 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #nk-translate-widget {
+        bottom: 20px;
+        right: 15px;
+    }
+    
+    #nk-translate-toggle {
+        padding: 10px;
+    }
+    
+    .translate-text {
+        display: none;
+    }
+}

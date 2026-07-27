@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/**
+ * Title: NatunKicho Premium UI Navigation Presentation Layer
+ * Layout Rules: Scalable Flexbox & CSS Grid Ecosystem
+ */
+
+:root {
+    --nk-primary: #0066cc;
+    --nk-dark: #111827;
+    --nk-light: #f3f4f6;
+    --nk-accent: #10b981;
+    --nk-border: #e5e7eb;
+    --nk-text-muted: #6b7280;
+}
+
+body { margin:0; font-family: system-ui, -apple-system, sans-serif; }
+.nk-master-header { width:100%; position:relative; z-index:99999; background:#fff; box-shadow:0 2px 10px rgba(0,0,0,0.05); }
+.nk-master-header.is-sticky { position:fixed; top:0; left:0; animation: slideDown 0.3s ease; }
+@keyframes slideDown { from { transform: translateY(-30px); } to { transform: translateY(0); } }
+
+/* Layer 1: Top Utility Bar */
+.nk-topbar { background: var(--nk-dark); color:#fff; font-size:12px; display:flex; justify-content:space-between; align-items:center; padding:8px 4%; border-bottom:1px solid #2d3748; }
+.nk-topbar a { color:#cbd5e1; text-decoration:none; margin-right:12px; transition:color 0.2s; }
+.nk-topbar a:hover { color:#fff; }
+.nk-announcement { flex-grow:1; text-align:center; color:#fef08a; font-weight:600; }
+
+/* Layer 2: Main Branding and Direct Nav Elements */
+.nk-main-header { display:flex; justify-content:space-between; align-items:center; padding:0 4%; height: 76px; border-bottom:1px solid var(--nk-border); transition: height 0.3s ease; }
+.nk-master-header.is-sticky .nk-main-header { height: 60px; }
+.nk-logo a { font-size:24px; font-weight:800; color:var(--nk-primary); text-decoration:none; letter-spacing:-0.5px; display:flex; align-items:center; }
+.nk-logo a img { max-height: 45px; width: auto; display: block; }
+.nk-master-header.is-sticky .nk-logo a img { max-height: 35px; } /* Shrink logo on scroll */
+
+/* Mega Nav Container Base (STRETCHED TO FIX HOVER GAP) */
+.nk-nav-menu { display:flex; list-style:none; margin:0; padding:0; height: 100%; }
+.nk-nav-item { position:static; padding: 0 14px; height: 100%; display: flex; align-items: center; }
+.nk-nav-link { font-weight:600; color:#374151; text-decoration:none; font-size:14px; padding:0; height: 100%; display:flex; align-items:center; cursor:pointer; }
+.nk-nav-link:hover, .nk-nav-item:hover .nk-nav-link { color: var(--nk-primary); }
+
+/* Structural Mega Dropdown Grid Framework */
+.nk-mega-dropdown { position:absolute; top:100%; left:4%; right:4%; background:#fff; border:1px solid var(--nk-border); border-top:3px solid var(--nk-primary); border-radius:0 0 8px 8px; box-shadow:0 10px 25px rgba(0,0,0,0.08); display:none; grid-template-columns: repeat(4, 1fr); gap:24px; padding:28px; z-index:10000; }
+.nk-nav-item:hover .nk-mega-dropdown { display:grid; }
+
+/* The Invisible Hover Bridge (Failsafe) */
+.nk-mega-dropdown::before, .nk-user-dropdown::before, .nk-notif-dropdown::before {
+    content: ''; position: absolute; top: -30px; left: 0; width: 100%; height: 30px; background: transparent; 
+}
+
+.nk-mega-col h4 { font-size:13px; text-transform:uppercase; color:var(--nk-text-muted); margin:0 0 12px 0; letter-spacing:0.5px; border-bottom:1px solid var(--nk-border); padding-bottom:4px;}
+.nk-mega-col ul { list-style:none; padding:0; margin:0; }
+.nk-mega-col ul li a { display:block; padding:6px 0; color:#4b5563; text-decoration:none; font-size:14px; transition:0.2s; }
+.nk-mega-col ul li a:hover { color:var(--nk-primary); transform: translateX(3px); }
+.nk-widget-card { background:var(--nk-light); padding:12px; border-radius:6px; margin-top:8px; border:1px solid var(--nk-border); }
+
+/* UI Controls Right Grid */
+.nk-actions-cluster { display:flex; align-items:center; gap:16px; height: 100%; }
+.nk-icon-btn { background:none; border:none; position:relative; cursor:pointer; font-size:20px; color:#4b5563; padding:6px; }
+.nk-badge { position:absolute; top:-2px; right:-2px; background:red; color:#fff; font-size:9px; border-radius:50%; width:15px; height:15px; display:flex; align-items:center; justify-content:center; font-weight:bold; }
+.nk-cta-btn { background:var(--nk-primary); color:#fff; padding:10px 18px; border-radius:6px; text-decoration:none; font-weight:600; font-size:14px; box-shadow:0 2px 4px rgba(0,96,204,0.2); transition: 0.2s; }
+.nk-cta-btn:hover { background:#0052a3; }
+
+/* Search Panel overlay rules */
+.nk-search-panel { display:none; position:absolute; top:100%; left:0; width:100%; background:#fff; border-bottom:2px solid var(--nk-primary); padding:16px 4%; box-shadow:0 4px 6px rgba(0,0,0,0.05); box-sizing:border-box; }
+.nk-search-grid { display:flex; gap:12px; width:100%; max-width:900px; margin:0 auto; }
+.nk-search-grid input { flex-grow:1; padding:10px; border:1px solid var(--nk-border); border-radius:4px; }
+.nk-search-grid select { padding:10px; border:1px solid var(--nk-border); border-radius:4px; background:#fff; }
+
+/* User Contextual Flyout Dropdowns */
+.nk-user-menu { position:relative; height: 100%; display: flex; align-items: center; }
+.nk-user-dropdown { display:none; position:absolute; right:0; top:100%; width:220px; background:#fff; border:1px solid var(--nk-border); box-shadow:0 4px 12px rgba(0,0,0,0.1); border-radius:6px; padding:8px 0; list-style:none; }
+.nk-user-menu:hover .nk-user-dropdown { display:block; }
+.nk-user-dropdown a { display:block; padding:10px 16px; color:#374151; text-decoration:none; font-size:14px; }
+.nk-user-dropdown a:hover { background:var(--nk-light); color:var(--nk-primary); }
+.nk-notif-dropdown { display:none; position:absolute; right:60px; top:100%; width:300px; background:#fff; border:1px solid var(--nk-border); box-shadow:0 4px 12px rgba(0,0,0,0.1); border-radius:6px; padding:12px; max-height:400px; overflow-y:auto; }
+.nk-notif-item { padding:8px; border-bottom:1px solid var(--nk-light); font-size:13px; list-style-type:none; color: var(--nk-dark); }
+.nk-notif-item .nk-time { display:block; color:var(--nk-text-muted); font-size:11px; margin-top: 2px; }
+
+/* Mobile Adjustments & Structural Collapse */
+.nk-hamburger, .nk-floating-mobile-cta { display:none; }
+@media(max-width:1024px) {
+    /* Hide topbar permanently on mobile */
+    .nk-topbar { display:none !important; }
+    
+    /* Hide nav menu by default, but allow it to be toggled */
+    .nk-nav-menu { display:none; }
+    
+    /* 1. The Active Mobile Menu Layout (Bulletproof Version) */
+    .nk-nav-menu.is-mobile-active {
+        display: flex !important;
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2) !important;
+        height: auto !important;
+        max-height: 85vh !important;
+        overflow-y: auto !important;
+        border-top: 2px solid var(--nk-primary) !important;
+        z-index: 999999 !important; /* CRITICAL: Forces it above all page content */
+    }
+
+    /* 2. Style the links for mobile touch targets */
+    .nk-nav-menu.is-mobile-active .nk-nav-item {
+        width: 100% !important;
+        padding: 0 !important;
+        height: auto !important;
+    }
+    
+    .nk-nav-menu.is-mobile-active .nk-nav-link {
+        padding: 16px 20px !important;
+        width: 100% !important;
+        border-bottom: 1px solid var(--nk-light) !important;
+        display: block !important;
+        box-sizing: border-box !important;
+    }
+
+    /* 3. Make the Mega Dropdowns visible & stacked on mobile! */
+    .nk-nav-menu.is-mobile-active .nk-mega-dropdown {
+        position: relative !important;
+        display: flex !important; /* Show them as a vertical list */
+        flex-direction: column !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-top: 1px dashed var(--nk-border) !important;
+        padding: 15px 20px !important;
+        background: var(--nk-light) !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+    }
+    
+    .nk-nav-menu.is-mobile-active .nk-mega-col {
+        margin-bottom: 15px;
+    }
+    
+    /* 4. Prevent the hamburger from being crushed and give it color */
+    .nk-hamburger { 
+        display:flex; 
+        align-items:center; 
+        justify-content:center;
+        font-size:28px; 
+        background:none; 
+        border:none; 
+        cursor:pointer; 
+        color: var(--nk-dark); /* Forces the icon to be visible */
+        padding: 4px;
+        margin-right: 8px;
+        flex-shrink: 0; /* STOPS flexbox from squishing it to 0 width */
+    }
+    
+    .nk-main-header { padding:0 12px; height: 60px; }
+
+    /* 5. Scale up the action icons and adjust the notification badge */
+    .nk-actions-cluster { gap: 12px; flex-shrink: 0; }
+    .nk-actions-cluster .nk-icon-btn { font-size: 24px; padding: 4px; display: flex; align-items: center; }
+    .nk-badge { width: 16px; height: 16px; font-size: 10px; top: -6px; right: -6px; }
+    
+    /* 6. Hide redundant elements to free up space */
+    .nk-hide-mobile { display: none !important; } /* Hides "Account" text */
+    .nk-actions-cluster .nk-cta-btn { display: none !important; } /* Hides top Join Now button */
+    
+    /* 7. Keep the floating CTA intact */
+    .nk-floating-mobile-cta { 
+        display:block; 
+        position:fixed; 
+        bottom:20px; 
+        right:20px; 
+        background:var(--nk-accent); 
+        color:#fff; 
+        padding:14px 24px; 
+        border-radius:50px; 
+        text-decoration:none; 
+        font-weight:700; 
+        box-shadow:0 4px 12px rgba(0,0,0,0.15); 
+        z-index:999999; 
+    }
+}
