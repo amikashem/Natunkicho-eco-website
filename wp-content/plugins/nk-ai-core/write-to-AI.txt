@@ -1,0 +1,1 @@
+Do not write any OpenAI or Gemini API connections in your code. Do not hardcode any API keys. Just send the user's text to my Core using NK_AI_Gateway::run('module_name', 'prompt_key', $text); and [...]

@@ -1,0 +1,30 @@
+nk-social-distributor/
+│
+├── nk-social-distributor.php          (Core plugin file - WE ARE HERE ✅)
+│
+├── admin/                             (WordPress Admin Dashboard UI)
+│   ├── class-nk-social-admin.php      (Creates the settings menu & tabs)
+│   ├── views/
+│   │   ├── view-settings.php          (API Keys & Toggles UI)
+│   │   ├── view-queue.php             (See pending/failed posts UI)
+│   │   └── view-analytics.php         (Clicks and traffic graphs UI)
+│
+├── includes/                          (The Core Engine)
+│   ├── class-nk-social-queue.php      (Handles inserting/updating DB table)
+│   ├── class-nk-social-cron.php       (Background worker that posts to social)
+│   ├── class-nk-social-logger.php     (Error tracking and API response logs)
+│   └── class-nk-social-tracker.php    (Intercepts social clicks for analytics)
+│
+├── ai/                                (Artificial Intelligence)
+│   └── class-nk-social-ai.php         (Generates platform-specific captions)
+│
+├── integrations/                      (Platform Connectors)
+│   ├── interface-nk-platform.php      (The rulebook every platform must follow)
+│   ├── class-nk-telegram.php          (Telegram API logic)
+│   ├── class-nk-linkedin.php          (LinkedIn API logic)
+│   ├── class-nk-facebook.php          (Facebook API logic)
+│   └── class-nk-threads.php           (Threads API logic)
+│
+└── assets/                            (Plugin Styles & Scripts)
+    ├── css/admin.css
+    └── js/admin.js
