@@ -1,0 +1,24 @@
+[11-Jul-2026 21:12:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/group_radio_full_3.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/group_radio_full_3.php on line 14
+[11-Jul-2026 21:13:58 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/upload_half.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/upload_half.php on line 13
+[11-Jul-2026 21:16:10 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/checkbox.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/checkbox.php on line 18
+[11-Jul-2026 21:48:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function sanitize_key() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/radio_vertical.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/radio_vertical.php on line 12
+[11-Jul-2026 21:49:06 UTC] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/color_preset.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/color_preset.php on line 12
+[11-Jul-2026 23:28:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/group_radio.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/group_radio.php on line 14

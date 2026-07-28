@@ -1,0 +1,4 @@
+[17-Jul-2026 00:45:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/layouts/razorpay/checkout-form.php:1
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/layouts/razorpay/checkout-form.php on line 1

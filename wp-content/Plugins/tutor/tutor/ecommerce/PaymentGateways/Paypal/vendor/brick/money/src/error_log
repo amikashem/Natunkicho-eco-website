@@ -1,0 +1,16 @@
+[17-Jul-2026 05:24:52 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Money\AbstractMoney" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/RationalMoney.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/RationalMoney.php on line 19
+[17-Jul-2026 14:11:41 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\MoneyContainer" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/MoneyBag.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/MoneyBag.php on line 14
+[17-Jul-2026 15:17:39 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Money\AbstractMoney" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Money.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Money.php on line 34
+[17-Jul-2026 19:49:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\MoneyContainer" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/AbstractMoney.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/AbstractMoney.php on line 21

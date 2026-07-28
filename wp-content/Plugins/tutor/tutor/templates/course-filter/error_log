@@ -1,0 +1,4 @@
+[11-Jul-2026 21:16:54 UTC] PHP Fatal error:  Uncaught Error: Class "TUTOR\Course_Filter" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/course-filter/filters.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/course-filter/filters.php on line 12

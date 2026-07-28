@@ -1,0 +1,32 @@
+[17-Jul-2026 09:38:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/create-course-empty-state.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/create-course-empty-state.php on line 17
+[17-Jul-2026 10:39:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/list-empty-state.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/list-empty-state.php on line 12
+[17-Jul-2026 10:40:55 UTC] PHP Fatal error:  Uncaught Error: Class "TUTOR\Input" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/filters.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/filters.php on line 21
+[17-Jul-2026 14:19:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_load_template_from_custom_path() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/list-filters.php:229
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/list-filters.php on line 229
+[17-Jul-2026 15:17:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/common-confirm-popup.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/common-confirm-popup.php on line 21
+[17-Jul-2026 18:35:11 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/trashed-course-empty-state.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/trashed-course-empty-state.php on line 16
+[18-Jul-2026 00:19:27 UTC] PHP Fatal error:  Uncaught Error: Class "TUTOR\Input" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/purchase-history-filter.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/purchase-history-filter.php on line 17
+[18-Jul-2026 01:01:23 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/bulk-confirm-popup.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/elements/bulk-confirm-popup.php on line 18

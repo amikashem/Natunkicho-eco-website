@@ -1,0 +1,4 @@
+[16-Jul-2026 23:58:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/layouts/alipay/show-payment-methods.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/layouts/alipay/show-payment-methods.php on line 9

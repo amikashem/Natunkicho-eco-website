@@ -1,0 +1,12 @@
+[17-Jul-2026 07:59:30 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigDecimal.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigDecimal.php on line 17
+[17-Jul-2026 07:59:36 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigRational.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigRational.php on line 19
+[17-Jul-2026 10:40:07 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Math\BigNumber" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigInteger.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/math/src/BigInteger.php on line 22

@@ -1,0 +1,16 @@
+[15-Jul-2026 12:49:28 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Config\RepositoryContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php on line 8
+[15-Jul-2026 13:44:59 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Config\RepositoryContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php on line 8
+[17-Jul-2026 00:39:11 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Config\RepositoryContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php on line 8
+[18-Jul-2026 20:44:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Config\RepositoryContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Config/Repository.php on line 8

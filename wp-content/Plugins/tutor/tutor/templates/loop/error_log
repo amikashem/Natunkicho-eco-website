@@ -1,0 +1,20 @@
+[11-Jul-2026 21:44:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_ID() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/enrolled-course-progress.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/enrolled-course-progress.php on line 12
+[11-Jul-2026 21:45:18 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/course-price-edd.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/course-price-edd.php on line 12
+[11-Jul-2026 21:46:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_ID() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/course-price-woocommerce.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/course-price-woocommerce.php on line 14
+[11-Jul-2026 22:31:30 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_course_loop_thumbnail() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/header.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/header.php on line 14
+[11-Jul-2026 22:32:08 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_course_loop_price() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/footer.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/loop/footer.php on line 13

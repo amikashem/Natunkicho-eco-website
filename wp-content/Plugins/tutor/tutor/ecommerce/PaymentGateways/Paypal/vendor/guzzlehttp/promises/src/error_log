@@ -1,0 +1,32 @@
+[18-Jul-2026 05:18:52 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/FulfilledPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/FulfilledPromise.php on line 15
+[18-Jul-2026 07:16:57 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/Coroutine.php:46
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/Coroutine.php on line 46
+[18-Jul-2026 11:24:52 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\TaskQueueInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/TaskQueue.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/TaskQueue.php on line 18
+[18-Jul-2026 11:25:28 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/CancellationException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/CancellationException.php on line 10
+[18-Jul-2026 12:25:14 UTC] PHP Fatal error:  Uncaught Error: Class "GuzzleHttp\Promise\RejectionException" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/AggregateException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/AggregateException.php on line 10
+[18-Jul-2026 17:40:39 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/Promise.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/Promise.php on line 14
+[18-Jul-2026 18:37:04 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromisorInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/EachPromise.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/EachPromise.php on line 13
+[18-Jul-2026 20:34:39 UTC] PHP Fatal error:  Uncaught Error: Interface "GuzzleHttp\Promise\PromiseInterface" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/RejectedPromise.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/guzzlehttp/promises/src/RejectedPromise.php on line 15

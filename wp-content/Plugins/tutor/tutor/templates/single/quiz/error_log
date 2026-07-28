@@ -1,0 +1,24 @@
+[12-Jul-2026 13:20:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_ID() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/content.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/content.php on line 15
+[12-Jul-2026 13:21:05 UTC] PHP Fatal error:  Uncaught Error: Class "Tutor\Models\CourseModel" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/body.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/body.php on line 18
+[12-Jul-2026 14:54:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_ID() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/top.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/top.php on line 18
+[12-Jul-2026 15:09:37 UTC] PHP Fatal error:  Uncaught Error: Class "Tutor\Models\CourseModel" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/single_quiz_contents.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/single_quiz_contents.php on line 14
+[12-Jul-2026 19:51:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/previous-attempts.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/previous-attempts.php on line 15
+[13-Jul-2026 03:36:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/no_course_belongs.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/quiz/no_course_belongs.php on line 15

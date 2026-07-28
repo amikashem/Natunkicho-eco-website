@@ -1,0 +1,8 @@
+[12-Jul-2026 19:39:06 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/login-form.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/login-form.php on line 20
+[16-Jul-2026 15:19:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/login-form-legacy.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/login-form-legacy.php on line 13

@@ -1,0 +1,16 @@
+[15-Jul-2026 06:20:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Core\ContainerContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php on line 6
+[15-Jul-2026 19:59:54 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Core\ContainerContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php on line 6
+[16-Jul-2026 21:26:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Core\ContainerContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php on line 6
+[17-Jul-2026 23:28:48 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Core\ContainerContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Container.php on line 6

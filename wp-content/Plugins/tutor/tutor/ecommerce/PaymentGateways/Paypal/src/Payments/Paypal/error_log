@@ -1,0 +1,16 @@
+[16-Jul-2026 04:17:06 UTC] PHP Fatal error:  Uncaught Error: Class "Ollyo\PaymentHub\Core\Payment\BasePayment" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php on line 15
+[16-Jul-2026 19:05:09 UTC] PHP Fatal error:  Uncaught Error: Class "Ollyo\PaymentHub\Core\Payment\BasePayment" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php on line 15
+[17-Jul-2026 18:08:55 UTC] PHP Fatal error:  Uncaught Error: Class "Ollyo\PaymentHub\Core\Payment\BasePayment" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php on line 15
+[18-Jul-2026 18:13:07 UTC] PHP Fatal error:  Uncaught Error: Class "Ollyo\PaymentHub\Core\Payment\BasePayment" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Payments/Paypal/Paypal.php on line 15

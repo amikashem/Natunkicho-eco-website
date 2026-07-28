@@ -1,0 +1,16 @@
+[16-Jul-2026 15:07:52 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Support\UriContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php on line 7
+[17-Jul-2026 00:44:38 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Support\UriContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php on line 7
+[17-Jul-2026 22:06:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Support\UriContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php on line 7
+[18-Jul-2026 16:30:10 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Support\UriContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Support/Uri.php on line 7

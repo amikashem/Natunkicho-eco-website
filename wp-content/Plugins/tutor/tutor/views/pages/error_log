@@ -1,0 +1,4 @@
+[11-Jul-2026 21:19:53 UTC] PHP Fatal error:  Uncaught Error: Class "TUTOR\Input" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/answer.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/answer.php on line 13

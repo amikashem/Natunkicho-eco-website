@@ -1,0 +1,20 @@
+[18-Jul-2026 07:08:31 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\ExchangeRateProvider" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/BaseCurrencyProvider.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/BaseCurrencyProvider.php on line 21
+[18-Jul-2026 09:17:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\ExchangeRateProvider" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/ProviderChain.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/ProviderChain.php on line 13
+[18-Jul-2026 09:17:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\ExchangeRateProvider" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/CachedProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/CachedProvider.php on line 13
+[18-Jul-2026 09:17:39 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\ExchangeRateProvider" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/ConfigurableProvider.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/ConfigurableProvider.php on line 15
+[18-Jul-2026 10:17:58 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\ExchangeRateProvider" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/PDOProvider.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/ExchangeRateProvider/PDOProvider.php on line 13

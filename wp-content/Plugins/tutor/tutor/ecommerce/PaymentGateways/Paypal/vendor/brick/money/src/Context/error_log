@@ -1,0 +1,16 @@
+[18-Jul-2026 05:19:00 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\Context" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/DefaultContext.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/DefaultContext.php on line 16
+[18-Jul-2026 07:09:20 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\Context" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/CashContext.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/CashContext.php on line 16
+[18-Jul-2026 11:24:55 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\Context" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/CustomContext.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/CustomContext.php on line 16
+[18-Jul-2026 19:32:15 UTC] PHP Fatal error:  Uncaught Error: Interface "Brick\Money\Context" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/AutoContext.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Context/AutoContext.php on line 17

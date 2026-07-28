@@ -1,0 +1,12 @@
+[11-Jul-2026 21:13:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_kses() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/minimal.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/minimal.php on line 17
+[11-Jul-2026 21:13:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/portrait-horizontal.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/portrait-horizontal.php on line 18
+[11-Jul-2026 21:47:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_url() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/default.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/instructor/default.php on line 17

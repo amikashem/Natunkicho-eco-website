@@ -1,0 +1,12 @@
+[19-Jul-2026 17:44:40 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Money\Exception\MoneyException" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/MoneyMismatchException.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/MoneyMismatchException.php on line 12
+[20-Jul-2026 03:18:43 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Money\Exception\MoneyException" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/CurrencyConversionException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/CurrencyConversionException.php on line 10
+[20-Jul-2026 06:38:39 UTC] PHP Fatal error:  Uncaught Error: Class "Brick\Money\Exception\MoneyException" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/UnknownCurrencyException.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/vendor/brick/money/src/Exception/UnknownCurrencyException.php on line 10

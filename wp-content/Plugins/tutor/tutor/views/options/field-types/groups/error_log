@@ -1,0 +1,20 @@
+[12-Jul-2026 10:32:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/select.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/select.php on line 13
+[12-Jul-2026 11:30:05 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/ratio.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/ratio.php on line 14
+[12-Jul-2026 12:24:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/checkbox.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/checkbox.php on line 14
+[12-Jul-2026 18:55:49 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/text.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/text.php on line 13
+[13-Jul-2026 02:31:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/number.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/field-types/groups/number.php on line 13

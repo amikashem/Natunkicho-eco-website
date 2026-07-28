@@ -1,0 +1,8 @@
+[12-Jul-2026 22:55:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/template/common/reset-button-template.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/template/common/reset-button-template.php on line 16
+[13-Jul-2026 01:33:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_attr_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/template/common/modal-confirm.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/options/template/common/modal-confirm.php on line 18

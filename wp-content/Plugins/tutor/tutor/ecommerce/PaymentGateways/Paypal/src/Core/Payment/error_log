@@ -1,0 +1,16 @@
+[16-Jul-2026 12:28:27 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Payment\ConfigContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php on line 10
+[16-Jul-2026 13:26:56 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Payment\ConfigContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php on line 10
+[17-Jul-2026 16:19:34 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Payment\ConfigContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php on line 10
+[18-Jul-2026 21:25:22 UTC] PHP Fatal error:  Uncaught Error: Interface "Ollyo\PaymentHub\Contracts\Payment\ConfigContract" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Paypal/src/Core/Payment/BaseConfig.php on line 10

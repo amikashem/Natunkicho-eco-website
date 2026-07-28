@@ -1,0 +1,4 @@
+[11-Jul-2026 22:32:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/ecommerce/order-placement-success.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/ecommerce/order-placement-success.php on line 13

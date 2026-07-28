@@ -1,0 +1,4 @@
+[17-Jul-2026 05:24:36 UTC] PHP Fatal error:  Uncaught Error: Class "Ollyo\PaymentHub\Core\Payment\BaseConfig" not found in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Configs/PaypalConfig.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/ecommerce/PaymentGateways/Configs/PaypalConfig.php on line 17

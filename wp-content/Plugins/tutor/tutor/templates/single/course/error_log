@@ -1,0 +1,50 @@
+[12-Jul-2026 04:17:17 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/tags.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/tags.php on line 12
+[12-Jul-2026 12:26:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/add-to-cart-woocommerce.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/add-to-cart-woocommerce.php on line 12
+[12-Jul-2026 15:11:25 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-requirements.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-requirements.php on line 12
+[12-Jul-2026 15:11:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/instructors.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/instructors.php on line 14
+[12-Jul-2026 18:54:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/material-includes.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/material-includes.php on line 12
+[12-Jul-2026 18:56:12 UTC] PHP Warning:  Undefined variable $reviews in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/reviews-loop.php on line 12
+[12-Jul-2026 18:56:12 UTC] PHP Warning:  foreach() argument must be of type array|object, null given in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/reviews-loop.php on line 12
+[13-Jul-2026 00:44:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-content.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-content.php on line 14
+[13-Jul-2026 01:38:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_title() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/social_share.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/social_share.php on line 13
+[13-Jul-2026 02:30:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_the_ID() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/add-to-cart-tutor.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/add-to-cart-tutor.php on line 18
+[13-Jul-2026 02:34:09 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/wc-price-html.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/wc-price-html.php on line 12
+[13-Jul-2026 02:34:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-benefits.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-benefits.php on line 12
+[13-Jul-2026 02:34:57 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function do_action() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-target-audience.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-target-audience.php on line 12
+[13-Jul-2026 03:34:24 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function apply_filters() in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-entry-box.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/templates/single/course/course-entry-box.php on line 17

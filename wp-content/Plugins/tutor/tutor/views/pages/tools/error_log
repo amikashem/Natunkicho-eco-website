@@ -1,0 +1,16 @@
+[13-Jul-2026 16:13:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/status.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/status.php on line 13
+[13-Jul-2026 18:31:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function tutor_utils() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/tutor_pages.php:11
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/tutor_pages.php on line 11
+[13-Jul-2026 20:33:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function get_current_user_id() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/manage-tokens.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/manage-tokens.php on line 17
+[13-Jul-2026 21:27:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function esc_html_e() in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/settings-log.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/natuhyoh/public_html/wp-content/plugins/tutor/views/pages/tools/settings-log.php on line 15
