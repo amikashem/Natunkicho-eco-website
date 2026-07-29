@@ -105,6 +105,9 @@ function nk_bulk_cv_download_handler() {
         $cv_html = nk_generate_cv_html_for_download( $cand_id );
         $user    = get_userdata( $cand_id );
         $name    = sanitize_file_name( $user->display_name ?: 'candidate-' . $cand_id );
+        if ( empty( $name ) || $name === '-' ) {
+            $name = 'candidate-' . $cand_id;
+        }
         $zip->addFromString( $name . '-cv.html', $cv_html );
     }
 
@@ -166,7 +169,7 @@ function nk_generate_cv_html_for_download( $user_id ) {
     }
 
     // Fallback to user meta if no CV builder profile
-    $name     = ! empty( $p_data['first_name'] ) ? $p_data['first_name'] . ' ' . ($p_data['last_name'] ?? '') : $user->display_name;
+    $name     = ! empty( $p_data['first_name'] ) ? trim( $p_data['first_name'] . ' ' . ($p_data['last_name'] ?? '') ) : $user->display_name;
     $email    = ! empty( $p_data['email'] ) ? $p_data['email'] : $user->user_email;
     $phone    = ! empty( $p_data['phone'] ) ? $p_data['phone'] : get_user_meta( $user_id, 'nk_phone', true );
     $title    = get_user_meta( $user_id, 'nk_job_title', true ) ?: 'Professional';

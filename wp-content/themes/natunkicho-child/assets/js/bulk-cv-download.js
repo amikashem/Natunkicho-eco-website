@@ -65,7 +65,12 @@
                 body: formData,
                 credentials: 'same-origin'
             })
-            .then(function(response) { return response.json(); })
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Server returned ' + response.status);
+                }
+                return response.json();
+            })
             .then(function(result) {
                 if (result.success) {
                     showStatus('✅ ' + result.data.count + ' CV(s) ready! Starting download...', 'success');
