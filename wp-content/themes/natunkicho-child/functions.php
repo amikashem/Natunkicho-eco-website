@@ -72,6 +72,7 @@ require_once get_stylesheet_directory() . '/inc/search/category-links-shortcode.
 //require_once get_stylesheet_directory() . '/inc/employer/company-profile.php';
 //require_once get_stylesheet_directory() . '/inc/employer/employer-applications.php';
 //require_once get_stylesheet_directory() . '/inc/employer/talent-database.php';
+require_once get_stylesheet_directory() . '/inc/employer/bulk-cv-download.php';
 
 // --- 9. LOAD LEARNING SYSTEM ---
 require_once get_stylesheet_directory() . '/inc/learning/learning-alerts.php';

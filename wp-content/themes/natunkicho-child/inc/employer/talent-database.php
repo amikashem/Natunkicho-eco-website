@@ -101,6 +101,13 @@ function nk_talent_database_shortcode() {
             </form>
         </div>
 
+        <?php if ( $is_premium ) : ?>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; padding: 12px 18px; background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 10px;">
+            <span style="font-size: 13px; color: #1e40af; font-weight: 600;">☑️ Select up to 10 candidates to download their CVs in bulk</span>
+            <span class="nk-bulk-max-badge">Max 10 at a time</span>
+        </div>
+        <?php endif; ?>
+
         <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 25px; position: relative; padding-bottom: <?php echo !$is_premium ? '150px' : '0'; ?>;">
             <?php if (empty($candidates)) : ?>
                 <div style="grid-column: 1 / -1; background: #f8fafc; padding: 40px; text-align: center; border-radius: 12px; border: 1px dashed #cbd5e1;">
@@ -121,8 +128,17 @@ function nk_talent_database_shortcode() {
                     $is_premium_cand = in_array('premium_job_seeker', (array)$cand->roles);
                     $ai_score = rand(85, 99); // Dynamic visual hook
                 ?>
-                    <div style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.02); overflow: hidden; <?php echo $blur_css; ?>" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)';">
+                    <div class="nk-candidate-card" style="background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 25px; display: flex; flex-direction: column; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.02); overflow: hidden; <?php echo $blur_css; ?>" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 15px 30px rgba(0,0,0,0.08)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 4px 6px rgba(0,0,0,0.02)';">
                         
+                        <?php if ( $is_premium ) : ?>
+                        <div class="nk-cv-checkbox-wrapper">
+                            <label>
+                                <input type="checkbox" class="nk-cv-checkbox" data-candidate-id="<?php echo esc_attr($cand->ID); ?>">
+                                Select
+                            </label>
+                        </div>
+                        <?php endif; ?>
+
                         <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
                             <div style="position: relative;">
                                 <?php if ( $photo_url ) : ?>
@@ -202,9 +218,34 @@ function nk_talent_database_shortcode() {
                 </div>
             <?php endif; ?>
         </div>
+
+        <?php if ( $is_premium ) : ?>
+        <!-- Floating Bulk CV Download Bar -->
+        <div id="nk-bulk-cv-bar" class="nk-bulk-cv-bar">
+            <span class="nk-bulk-count" id="nk-bulk-cv-count">0</span>
+            <span class="nk-bulk-label">candidate(s) selected</span>
+            <button type="button" id="nk-bulk-cv-download-btn" class="nk-bulk-download-btn">📥 Download Selected CVs</button>
+            <button type="button" id="nk-bulk-cv-clear-btn" class="nk-bulk-clear-btn">✕ Clear</button>
+            <div id="nk-bulk-cv-status" class="nk-bulk-status"></div>
+        </div>
+        <?php endif; ?>
     </div>
     <?php
     return ob_get_clean();
 }
- add_shortcode('nk_talent_database', 'nk_talent_database_shortcode'); 
- // Assuming you have this defined in your functions file already based on your provided code
+add_shortcode('nk_talent_database', 'nk_talent_database_shortcode');
+
+/**
+ * Enqueue Bulk CV Download assets on pages with the talent database shortcode.
+ */
+add_action('wp_enqueue_scripts', function() {
+    global $post;
+    if ( is_a($post, 'WP_Post') && has_shortcode($post->post_content, 'nk_talent_database') ) {
+        wp_enqueue_style('nk-bulk-cv-download', get_stylesheet_directory_uri() . '/assets/css/bulk-cv-download.css', [], '1.0.0');
+        wp_enqueue_script('nk-bulk-cv-download', get_stylesheet_directory_uri() . '/assets/js/bulk-cv-download.js', [], '1.0.0', true);
+        wp_localize_script('nk-bulk-cv-download', 'nkBulkCV', [
+            'ajax_url' => admin_url('admin-ajax.php'),
+            'nonce'    => wp_create_nonce('nk_bulk_cv_nonce'),
+        ]);
+    }
+});
